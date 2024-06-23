@@ -51,7 +51,7 @@
                     <a href="k.php"><i class="lab la-audible"></i> <span>Stok İstek Yönetimi</span></a>
                 </li>
                 <li >
-                    <a href="/Depo/list"><i class="la la-warehouse"></i> <span>Depo</span></a>
+                    <a href="#" data-page=""><i class="la la-warehouse"></i> <span>Yatay Form</span></a>
                 </li>
                 <!-- STOK -->
 

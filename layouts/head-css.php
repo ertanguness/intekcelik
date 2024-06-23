@@ -161,7 +161,7 @@ if ($page == 'profile.php' || $page == 'components.php' || $page == 'leave-setti
 <link rel="stylesheet" href="/assets/css/bootstrap-datetimepicker.min.css">
 <?php } ?>
 
-<link rel="stylesheet" href="/assets/plugins/morris/morris.css">
+
 <link rel="stylesheet" href="/assets/plugins/daterangepicker/daterangepicker.css">
 <link rel="stylesheet" href="/assets/css/bootstrap-datetimepicker.min.css">
 <link rel="stylesheet" href="/assets/css/dataTables.bootstrap4.min.css">
