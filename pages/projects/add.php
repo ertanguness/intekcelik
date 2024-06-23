@@ -12,7 +12,7 @@ if ($_POST && $_POST['method'] == "add") {
             } 
             
             
-            $sql = $con->prepare("INSERT INTO stoklar (StokAdi, Fiyati,Birimi) VALUES (?, ?,?)");
+            $sql = $con->prepare("INSERT INTO stoklar (StokAdi,Fiyati,Birimi) VALUES (?, ?,?)");
             $sql->execute([$StokAdi, $price,$unit]);
             
             echo "Kayıt Başarılı";

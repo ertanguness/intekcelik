@@ -10,6 +10,7 @@ if ($page == 'index.php' || $page == '') {
 }
 
 
+
 $pagePath = 'pages/' . $page . '.php';
 
 if (file_exists($pagePath)) {
@@ -17,3 +18,5 @@ if (file_exists($pagePath)) {
 } else {
     include('pages/error-404.php'); // Hata sayfası
 }
+
+

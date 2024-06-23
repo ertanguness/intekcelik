@@ -11,40 +11,37 @@
 </head>
 
 <body>
-    
 
-<!-- Main Wrapper -->
-<div class="main-wrapper">
-    <?php include 'layouts/menu.php'; ?>
-    <!-- Page Wrapper -->
-    <div class="page-wrapper">
 
-        <!-- Page Content -->
-        <div class="content container-fluid" id="content">
+    <!-- Main Wrapper -->
+    <div class="main-wrapper">
+        <?php include 'layouts/menu.php'; ?>
+        <!-- Page Wrapper -->
+        <div class="page-wrapper">
 
-            <?php
-            // URL yolunu almak ve boşsa 'home' yapmak için parse_url ve trim kullanımı
-            $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-            $page = trim($path, '/');
+            <!-- Page Content -->
+            <div class="content container-fluid" id="content">
 
-            // İçerik dosyasını dahil etme
-            include('content.php');
+                <?php
 
-            ?>
+                // İçerik dosyasını dahil etme
+                include('content.php');
+
+                ?>
+
+            </div>
+            <!-- /Page Content -->
 
         </div>
-        <!-- /Page Content -->
-
+        <!-- /Page Wrapper -->
     </div>
-    <!-- /Page Wrapper -->
-</div>
-<!-- /Main Wrapper -->
+    <!-- /Main Wrapper -->
 
-<?php include 'layouts/customizer.php'; ?>
+    <?php include 'layouts/customizer.php'; ?>
 
-<?php include 'layouts/vendor-scripts.php'; ?>
-<script src="/assets/js/app.js"></script>
-<script src="/src/app.js"></script>
+    <?php include 'layouts/vendor-scripts.php'; ?>
+    <script src="/assets/js/app.js"></script>
+    <script src="/src/app.js"></script>
 
 </body>
 

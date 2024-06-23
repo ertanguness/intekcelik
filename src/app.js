@@ -3,8 +3,8 @@ function loadContent(page, updateHistory = true) {
     url: "/content.php?page=" + page,
     method: "GET",
     success: function (response) {
-      $("#content").html(response);
       //   setActiveLink(page);
+      $("#content").html(response);
       if (updateHistory) {
         history.pushState(
           {
@@ -75,6 +75,6 @@ $(document).ready(function () {
       "/" + initialPage
     );
   }
-  loadContent(initialPage, false);
+  // loadContent(initialPage, false);
   //   setActiveLink(initialPage);
 });

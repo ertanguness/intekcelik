@@ -790,3 +790,4 @@
         </div>
     </div>
 </div>
+<?php include 'layouts/vendor-scripts2.php'; ?>

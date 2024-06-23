@@ -4,8 +4,8 @@
 // $page = end($link_array);
 
 
-$path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
-$page = trim($path, '/');
+// $path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+// $page = trim($path, '/');
 ?>
 <!-- jQuery -->
 <script src="/assets/js/jquery-3.7.1.min.js"></script>
