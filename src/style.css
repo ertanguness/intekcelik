@@ -1,0 +1,45 @@
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+#sidebar-menu {
+    width: 200px;
+    float: left;
+}
+
+#sidebar-menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#sidebar-menu li {
+    margin: 10px 0;
+    position: relative;
+}
+
+#sidebar-menu a {
+    text-decoration: none;
+    color: rgb(179, 47, 47);
+}
+
+#sidebar-menu a.active {
+    font-weight: bold;
+    color: blue;
+}
+
+#sidebar-menu ul ul {
+    display: none;
+    position: absolute;
+    left: 100px;
+    top: 0;
+    padding-left: 0;
+}
+
+#sidebar-menu li:hover>ul {
+    display: block;
+}
+
+#content {
+    margin-left: 220px;
+}
