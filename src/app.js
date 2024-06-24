@@ -78,3 +78,12 @@ $(document).ready(function () {
   // loadContent(initialPage, false);
   //   setActiveLink(initialPage);
 });
+
+
+function Route(event) {
+  event.preventDefault();
+  var page = $(event.target).attr("data-page") ?? null;
+  if (page !== "" && page !== null) {
+    loadContent(page);
+  }
+}
