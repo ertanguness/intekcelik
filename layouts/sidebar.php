@@ -1,10 +1,10 @@
 
 
-<!-- <?php require_once "config/functions.php"; ?> -->
+<!-- <?php //require_once "config/functions.php"; ?> -->
 
 <!-- Sidebar -->
 <div class="sidebar" id="sidebar">
-    <div class="sidebar-inner slimscroll">
+    <div class="sidebar-inner slimscroll" >
         <div id="sidebar-menu" class="sidebar-menu">
             <ul class="sidebar-vertical">
                 <li class="menu-title">
@@ -59,6 +59,32 @@
                 <li>
                     <a href="#" class="top-menu" data-page="companies/list"><i class="lab la-buffer"></i> <span>Firmalar</span></a>
                 </li>
+                <li>
+                    <a href="#" class="top-menu" data-page="companies/list"><i class="lab la-buffer"></i> <span>Firmalar</span></a>
+                </li>
+                <li>
+                    <a href="#" class="top-menu" data-page="companies/list"><i class="lab la-buffer"></i> <span>Firmalar</span></a>
+                </li>
+                <li>
+                    <a href="#" class="top-menu" data-page="companies/list"><i class="lab la-buffer"></i> <span>Firmalar</span></a>
+                </li>
+
+                <li class="submenu">
+                    <a href="#" ><i class="la la-gear"></i> <span> TANIMLAMALAR</span> <span class="menu-arrow"></span></a>
+                    <ul style="display: none;">
+                        <li><a href="#" data-page="projects/add">Tedarikçi Firma Tanımlama</a></li>
+                        <li><a href="#" data-page="projects/list">Ana Firma Tanımlama</a></li>
+                        <li><a href="#" data-page="projects/list">Kullanıcı Tanımlama</a></li>
+                        <li><a href="#" data-page="projects/list">Sorumlusu TanımlamaLarı</a></li>
+
+                        <li><a href="#" data-page="projects/list">Proje Durum Tanımlamaları</a></li>
+                        <li><a href="#" data-page="projects/list">Proje Süreç Tanımlamaları</a></li>
+                        <li><a href="#" data-page="projects/list">Ral Kodları Tanımlamaları</a></li>
+                        <li><a href="#" data-page="projects/list">Proje Kategori Tanımlamaları</a></li>
+                        <li><a href="#" data-page="projects/list">Proje Alt Kategori/Pafta Tanımlamaları</a></li>
+                    </ul>
+                </li>
+
 
             </ul>
 
@@ -67,4 +93,6 @@
 </div>
 
 
+
+		
 <!-- /Sidebar -->
