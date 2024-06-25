@@ -1,10 +1,6 @@
-<!-- <?php
-        $link = $_SERVER['PHP_SELF'];
-        $link_array = explode('/', $link);
-        $page = end($link_array);
-        ?> -->
 
-<?php require_once "config/functions.php"; ?>
+
+<!-- <?php require_once "config/functions.php"; ?> -->
 
 <!-- Sidebar -->
 <div class="sidebar" id="sidebar">
@@ -40,7 +36,7 @@
 
                 <!-- STOK -->
                 <li class="menu-title">
-                    <span>STOK</span>
+                    <span><?php echo $page ;?></span>
                 </li>
 
                 <li>

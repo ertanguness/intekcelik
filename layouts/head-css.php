@@ -1,7 +1,12 @@
 <?php
-$link = $_SERVER['PHP_SELF'];
-$link_array = explode('/', $link);
-$page = end($link_array);
+$page =  parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+
+  
+
+// Başı ve sonundaki / işaretlerini temizleyin
+$page = trim($page, '/');
+
+
 ?>
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css">

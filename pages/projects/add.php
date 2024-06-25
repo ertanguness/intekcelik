@@ -135,6 +135,18 @@
                   <div class="text-end">
                       <button type="submit" class="btn btn-primary" name="kaydet" id="kaydet">Kaydet</button>
                   </div>
+
+                  <div class="custom-file-container" data-upload-id="myFirstImage">
+                      <label>Upload (Single File) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                      <label class="custom-file-container__custom-file">
+                          <input type="file" class="custom-file-container__custom-file__custom-file-input" accept="image/*">
+                          <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+                          <span class="custom-file-container__custom-file__custom-file-control"></span>
+                      </label>
+                      <div class="custom-file-container__image-preview"></div>
+                  </div>
+
+                  
                   </form>
               </div>
           </div>
@@ -159,6 +171,9 @@
           </div>
       </div>
   </div>
+
+  <!-- Fileupload JS -->
+  <script src="/assets/plugins/fileupload/fileupload.min.js"></script>
   <script>
-    $(".select").select2();
+      $(".select").select2();
   </script>

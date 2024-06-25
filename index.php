@@ -1,12 +1,13 @@
+
 <?php require_once 'layouts/session.php'; ?>
 <?php include_once 'layouts/head-main.php'; ?>
 
 <head>
 
-    <title>İntek Çelik</title>
-    <?php include 'layouts/title-meta.php'; ?>
+    <?php include_once 'layouts/head-css.php'; ?>
+    <title><?php echo $page ;?></title>
+    <?php include_once 'layouts/title-meta.php'; ?>
 
-    <?php include 'layouts/head-css.php'; ?>
 
 </head>
 
@@ -23,10 +24,8 @@
             <div class="content container-fluid" id="content">
 
                 <?php
-
-                // İçerik dosyasını dahil etme
+             
                 include('content.php');
-
                 ?>
 
             </div>

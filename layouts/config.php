@@ -1,8 +1,10 @@
 <?php
-// $username = "mbeyazil_root";
-// $password = "54tJ29L^tg1[";
-// $hostname = "45.84.189.194";
-// $database = "mbeyazil_puantor";
+
+// SERVERDAKİ bilgiler
+// $username = "mbeyazil_intek";
+// $password = "8gfUzEtx029u";
+// $hostname = "localhost";
+// $database = "mbeyazil_intek";
 
 $username = "root";
 $password = "";
