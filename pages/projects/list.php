@@ -270,7 +270,7 @@
                                             <li>
                                                 <div class="person-profile">
                                                     <a href="#" class="profile-pic">
-                                                        <img src="assets/img/avatar/avatar-21.jpg" alt="Img">
+                                                        <img src="/assets/img/avatar/avatar-21.jpg" alt="Img">
                                                         Vaughan
                                                     </a>
 
@@ -280,7 +280,7 @@
                                             <li>
                                                 <div class="person-profile">
                                                     <a href="#" class="profile-pic">
-                                                        <img src="assets/img/avatar/avatar-1.jpg" alt="Img">
+                                                        <img src="/assets/img/avatar/avatar-1.jpg" alt="Img">
                                                         Jessica
                                                     </a>
                                                 </div>
@@ -388,7 +388,7 @@
                                             <li>
                                                 <div class="person-profile">
                                                     <a href="#" class="profile-pic">
-                                                        <img src="assets/img/avatar/avatar-21.jpg" alt="Img">
+                                                        <img src="/assets/img/avatar/avatar-21.jpg" alt="Img">
                                                         Vaughan
                                                     </a>
 
@@ -398,7 +398,7 @@
                                             <li>
                                                 <div class="person-profile">
                                                     <a href="#" class="profile-pic">
-                                                        <img src="assets/img/avatar/avatar-1.jpg" alt="Img">
+                                                        <img src="/assets/img/avatar/avatar-1.jpg" alt="Img">
                                                         Jessica
                                                     </a>
                                                 </div>

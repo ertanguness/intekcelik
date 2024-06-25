@@ -1,4 +1,5 @@
 function loadContent(page, updateHistory = true) {
+  console.log("loadContent : " + page);
   $.ajax({
     url: "/content.php?page=" + page,
     method: "GET",
@@ -20,6 +21,7 @@ function loadContent(page, updateHistory = true) {
 }
 
 function setActiveLink(page) {
+  $(".sidebar-menu .active").removeClass("active");
   $("#sidebar-menu a").each(function () {
     if ($(this).attr("data-page") == page) {
       $(this).addClass("active");
@@ -29,6 +31,7 @@ function setActiveLink(page) {
   });
 }
 
+// ileri veya geri butonuna basıldığında çalışacak fonksiyon
 $(window).on("popstate", function (event) {
   if (event.originalEvent.state && event.originalEvent.state.page) {
     loadContent(event.originalEvent.state.page, false);
@@ -58,6 +61,7 @@ $(document).ready(function () {
   // Load the initial content
   const initialPage =
     window.location.pathname.substring(1) || "admin-dashboard";
+    console.log("initialPage : " + initialPage);
   if (initialPage == "index.php") {
     const initialPage = "admin-dashboard";
     history.replaceState(
@@ -68,7 +72,7 @@ $(document).ready(function () {
       "/" + initialPage
     );
   }
-  // loadContent(initialPage, false);
+    //loadContent(initialPage, false);
   //   setActiveLink(initialPage);
 });
 

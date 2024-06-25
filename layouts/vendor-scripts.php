@@ -15,8 +15,10 @@
 
 <!-- Feather Icon JS -->
 <script src="/assets/js/feather.min.js"></script>
+
 <!-- Slimscroll JS -->
 <script src="/assets/js/jquery.slimscroll.min.js"></script>
+
 
 <!-- Theme Settings JS -->
 <?php if ($page !== 'index.php' && $page !== 'register.php' && $page !== 'otp.php' && $page !== 'forgot-password.php' && $page !== 'lock-screen.php'  && $page !== 'error-404.php'  && $page !== 'error-500.php' && $page !== 'coming-soon.php' && $page !== 'under-maintenance.php' && $page !== 'change-password.php' && $page !== 'job-list.php' && $page !== 'job-view.php') { ?>
@@ -276,3 +278,4 @@ if ($page == 'companies-grid.php' || $page == 'companies.php' || $page == 'compa
 <script src="/assets/plugins/daterangepicker/daterangepicker.js"></script>
 
 <script src="/assets/js/select2.min.js"></script>
+
