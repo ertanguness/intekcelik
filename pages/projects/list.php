@@ -159,7 +159,7 @@
                                         <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_pipeline"><i class="fa-solid fa-pencil m-r-5"></i> Düzenle</a>
                                         <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_pipeline"><i class="fa-regular fa-trash-can m-r-5"></i> Sil</a>
 
-                                        <a class="dropdown-item" href="#" data-page="projects/detail" onclick="Route(event)">
+                                        <a class="dropdown-item" href="#" data-page="projects/detail" onclick="Route(event,'false')">
                                             <i class="fa-regular fa-eye"></i> Görüntüle
                                         </a>
                                     </div>

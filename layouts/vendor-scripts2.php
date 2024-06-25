@@ -15,7 +15,7 @@ echo "sayfa adı : " . $page;
 
 if ($page == 'projects/add') { ?>
 	<!-- Select2 -->
-	<script src="/assets/plugins/select2/js/select2.min.js"></script>
+	<!-- <script src="/assets/plugins/select2/js/select2.min.js"></script> -->
 
 
 

@@ -42,11 +42,11 @@ $(document).ready(function () {
         $(this).next("ul").hide(350);
       }
     });
-    $("#sidebar-menu ul li.submenu a.active")
-      .parents("li:last")
-      .children("a:first")
-      .addClass("active")
-      .trigger("click");
+    // $("#sidebar-menu ul li.submenu a.active")
+    //   .parents("li:last")
+    //   .children("a:first")
+    //   .addClass("active")
+    //   .trigger("click");
   }
 
   // Sidebar Initiate

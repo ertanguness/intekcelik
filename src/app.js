@@ -13,38 +13,20 @@ function loadContent(page, updateHistory = true) {
           "",
           "/" + page
         );
+        $("#loader-wrapper").fadeOut(); // Veya .hide() kullanabilirsiniz
       }
     },
   });
 }
 
-// function setActiveLink(page) {
-//   $("#sidebar-menu a").each(function () {
-//     console.log($(this).attr("href").substring(1));
-//     if ($(this).attr("href").substring(1) === page) {
-//       $(this).addClass("active");
-//     } else {
-//       $(this).removeClass("active");
-//     }
-//   });
-// }
-
 function setActiveLink(page) {
-  //   $("#sidebar-menu a").each(function () {
-  //     if ($(this).attr("href").substring(1) === page) {
-  //       if (!$(this).parent().hasClass("submenu")) {
-  //         $(this).addClass("active");
-  //       } else {
-  //         $(this).parent().addClass("active");
-  //       }
-  //     } else {
-  //       if (!$(this).parent().hasClass("submenu")) {
-  //         $(this).removeClass("active");
-  //       } else {
-  //         $(this).parent().removeClass("active");
-  //       }
-  //     }
-  //   });
+  $("#sidebar-menu a").each(function () {
+    if ($(this).attr("data-page") == page) {
+      $(this).addClass("active");
+    } else {
+      $(this).removeClass("active");
+    }
+  });
 }
 
 $(window).on("popstate", function (event) {
@@ -53,18 +35,29 @@ $(window).on("popstate", function (event) {
   }
 });
 
+$("#sidebar-menu a").click(function (event) {
+  event.preventDefault();
+  var page = $(this).attr("data-page") ?? null;
+  if (page !== "" && page !== null) {
+    loadContent(page);
+    setActiveLink(page);
+  }
+});
+
 $(document).ready(function () {
-  $("#sidebar-menu a").click(function (event) {
+  $(".top-menu").click(function (event) {
     event.preventDefault();
-    //const pagedata = $(this).attr("href").substring(1);
-    var page = $(this).attr("data-page") ?? null;
-    if (page !== "" && page !== null) {
-      loadContent(page);
-    }
+
+    // Remove 'active' class from all items in the sidebar menu
+    $(".sidebar-menu .active").removeClass("active");
+
+    // Optional: Add 'active' class to the clicked top-menu item
+    $(this).parent().addClass("active");
   });
 
   // Load the initial content
-  const initialPage = window.location.pathname.substring(1) || "admin-dashboard";
+  const initialPage =
+    window.location.pathname.substring(1) || "admin-dashboard";
   if (initialPage == "index.php") {
     const initialPage = "admin-dashboard";
     history.replaceState(
@@ -79,11 +72,23 @@ $(document).ready(function () {
   //   setActiveLink(initialPage);
 });
 
-
-function Route(event) {
+function Route(event, remove = true) {
   event.preventDefault();
   var page = $(event.target).attr("data-page") ?? null;
   if (page !== "" && page !== null) {
     loadContent(page);
+    RemoveActiveLink(remove);
+    setActiveLink(page);
+  }
+}
+
+function RemoveActiveLink(remove = true) {
+  if (remove == true) {
+    $("#sidebar-menu a").each(function () {
+      if ($(this).hasClass("subdrop")) {
+        $(this).removeClass("subdrop");
+        $(this).next("ul").hide(350);
+      }
+    });
   }
 }
