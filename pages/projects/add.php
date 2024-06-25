@@ -1,10 +1,8 @@
 
-
-<!-- Sayfa Başlığı -->
+    
 <div class="page-header">
     <div class="row align-items-center">
         <div class="col-md-4">
-            <h3 class="page-title">Yeni Proje</h3>
             <ul class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#" onclick="Route(event)" data-page="admin-dashboard">Ana Sayfa</a></li>
                 <li class="breadcrumb-item active"><a href="#" onclick="Route(event)" data-page="projects/list">Projeler</a></li>
@@ -14,13 +12,9 @@
         <div class="col-md-8 float-end ms-auto">
             <div class="d-flex title-head">
                 <div class="view-icons">
-                    <a href="javascript:void(0);" class="grid-view btn btn-link"><i class="las la-redo-alt"></i></a>
                     <a href="javascript:void(0);" class="list-view btn btn-link" id="collapse-header"><i class="las la-expand-arrows-alt"></i></a>
-                    <a href="javascript:void(0);" class="list-view btn btn-link" id="filter_search"><i class="las la-filter"></i></a>
                 </div>
-                <div class="form-sort">
-                    <a href="javascript:void(0);" class="list-view btn btn-link" data-bs-toggle="modal" data-bs-target="#export"><i class="las la-file-export"></i>Export</a>
-                </div>
+                
                 <a href="#" class="btn add-btn" data-bs-toggle="modal" data-bs-target="#add_pipeline"><i class="la la-plus-circle"></i> Kaydet</a>
             </div>
         </div>
@@ -41,16 +35,16 @@
                     </li>         
                 </ul>
                 <div class="tab-content pt-0" id="myTabContent2">
-                    <div class="tab-pane fade show active p-0 border-bottom-0" id="products-tab-pane" role="tabpanel" aria-labelledby="products-tab" tabindex="0">
+                <div class="tab-pane fade show active p-4 border-bottom-0" id="products-tab-pane" role="tabpanel" aria-labelledby="products-tab" tabindex="0">
                         
-                        <div class="input-block mb-4 row">
+                        <div class="input-block mb-3 row">
                           <label class="col-lg-2 col-form-label">Proje Kodu <span style="color:red">(*)</span></label>
                           <div class="col-lg-3">
                               <input type="text" class="form-control" required name="projekodu" id="projekodu">
                           </div>
                           <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
                           <label class="col-lg-2 col-form-label">Teknik Resim Sorumlusu <span style="color:red">(*)</span></label>
-                        <div class="col-lg-3">
+                        <div class="col-lg-4">
                             <select class="select" required name="tekresim_sorumlusu" id="tekresim_sorumlusu">
                                 <option>TANIMLAMALARDAN GELECEK</option>
                             </select>
@@ -63,7 +57,7 @@
                           </div>
                           <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
                           <label class="col-lg-2 col-form-label">İmalat Sorumlusu <span style="color:red">(*)</span></label>
-                      <div class="col-lg-3">
+                      <div class="col-lg-4">
                           <select class="select" required name="imalat_sorumlusu" id="imalat_sorumlusu">
                               <option>TANIMLAMALARDAN GELECEK</option>
                           </select>
@@ -78,7 +72,7 @@
                           </div>
                           <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
                           <label class="col-lg-2 col-form-label">Kalite Sorumlusu <span style="color:red">(*)</span></label>
-                      <div class="col-lg-3">
+                      <div class="col-lg-4">
                           <select class="select" required name="kalite_sorumlusu" id="kalite_sorumlusu">
                               <option>TANIMLAMALARDAN GELECEK</option>
                           </select>
@@ -94,7 +88,7 @@
                           </div>
                           <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
                           <label class="col-lg-2 col-form-label">Proje Durumu<span style="color:red">(*)</span></label>
-                          <div class="col-lg-3">
+                          <div class="col-lg-4">
                               <select class="select" required name="projedurumu" id="projedurumu">
                                   <option>TANIMLAMALARDAN GELECEK</option>
                               </select>
@@ -108,48 +102,69 @@
                           </select>
                       </div>
                       <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
-                      <label class="col-lg-2 col-form-label"></label>
-                          <div class="col-lg-2">
-                              <input type="checkbox" name="boyali" id="boyali" > Boyalı
-                          </div>
-                          <div class="col-lg-2">
-                              <input type="checkbox" name="galvanizli" id="galvanizli" > Galvanizli
+                      <label class="col-lg-2 col-form-label"> Boya / Galvaniz</label>
+                        <div class="col-lg-2">                       
+							<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="boyaliradio" id="boyaliradio1" checked>
+                                <label class="btn btn-outline-primary" for="boyaliradio1">Boyasız</label>
+
+                                <input type="radio" class="btn-check" name="boyaliradio" id="boyaliradio2">
+                                <label class="btn btn-outline-primary" for="boyaliradio2">Boyalı</label>
+							</div>
+                        </div>
+                          <div class="col-lg-1">
+                          <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                <input type="radio" class="btn-check" name="galvanizliradio" id="galvanizliradio1" checked>
+                                <label class="btn btn-outline-primary" for="galvanizliradio1">Galvanizsiz</label>
+
+                                <input type="radio" class="btn-check" name="galvanizliradio" id="galvanizliradio2">
+                                <label class="btn btn-outline-primary" for="galvanizliradio2">Galvanizli</label>
+						  </div>
                           </div>
                       </div>
+                      <div class="custom-file-container" data-upload-id="myFirstImage">
+										<label>Proje Genel Bilgileri ile ilgili birden fazla dosya seçerek yükleyebilirsiniz <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image"></a></label>
+										<label class="custom-file-container__custom-file" >
+											<input name ="genel_dosya" id="genel_dosya" type="file" class="custom-file-container__custom-file__custom-file-input" multiple>
+											<input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+											<span class="custom-file-container__custom-file__custom-file-control"></span>
+										</label>
+										<div class="custom-file-container__image-preview"></div>
+						</div>
                     </div>
                      
-                    <div class="tab-pane fade" id="sales-tab-pane" role="tabpanel" aria-labelledby="sales-tab" tabindex="0">
-                    
+                    <div class="tab-pane fade p-4 border-bottom-0" id="sales-tab-pane" role="tabpanel" aria-labelledby="sales-tab" tabindex="0">
+   
                         <div class="input-block mb-3 row">
                               <label class="col-lg-2 col-form-label">Satın Alma No <span style="color:red">(*)</span></label>
-                              <div class="col-lg-3">
+                              <div class="col-lg-4">
                                   <input type="text" class="form-control" required name="satinalma_no" id="satinalma_no">
                               </div>
                               <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
-                              <label class="col-lg-2 col-form-label">Sipariş Veren <span style="color:red">(*)</span></label>
-                              <div class="col-lg-3">
+                              <label class="col-lg-1 col-form-label">Sipariş Veren <span style="color:red">(*)</span></label>
+                              <div class="col-lg-4">
                                   <input type="text" class="form-control" required name="siparis_veren" id="siparis_veren">
                               </div>
                         </div>
                         <div class="input-block mb-3 row">
                               <label class="col-lg-2 col-form-label">Proje Geliş Tarihi <span style="color:red">(*)</span></label>
-                              <div class="col-lg-3">
+                              <div class="col-lg-4">
                                   <input class="form-control datetimepicker" type="text" required name="gelistarihi" id="gelistarihi">
                               </div>
                               <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
-                              <label class="col-lg-2 col-form-label">Proje Tonajı </label>
-                              <div class="col-lg-3">
+                              <label class="col-lg-1 col-form-label">Proje Tonajı </label>
+                              <div class="col-lg-4">
                                   <input type="text" class="form-control" name="tonaj" id="tonaj" placeholder="Pozların toplamından otomatik hesaplanacak">
                               </div>
                         </div>
                         <div class="input-block mb-3 row">
                               <label class="col-lg-2 col-form-label">Proje Termin Süresi <span style="color:red">(*)</span></label>
-                              <div class="col-lg-3">
+                              <div class="col-lg-4">
                                   <input class="form-control datetimepicker" type="text" required name="termintarihi" id="termintarihi">
                               </div>
                               <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
-                              <label class="col-lg-2 col-form-label">Kg Birim Fiyat</label>
-                              <div class="col-lg-2">
+                              <label class="col-lg-1 col-form-label">Kg Birim Fiyat</label>
+                              <div class="col-lg-3">
                                   <input type="text" class="form-control" name="birimfiyat" id="birimfiyat">
                               </div>
                               <div class="col-lg-1">
@@ -158,31 +173,24 @@
                         </div>
                         <div class="input-block mb-3 row">
                               <label class="col-lg-2 col-form-label">Proje Teslim Tarihi<span style="color:red">(*)</span></label>
-                              <div class="col-lg-3">
+                              <div class="col-lg-4">
                                   <input class="form-control datetimepicker" type="text" required name="teslimtarihi" id="teslimtarihi">
                               </div>
                               <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
-                              <label class="col-lg-2 col-form-label">Proje Tutarı </label>
-                              <div class="col-lg-3">
+                              <label class="col-lg-1 col-form-label">Proje Tutarı </label>
+                              <div class="col-lg-4">
                                   <input type="text" class="form-control" name="proje_tutari" id="proje_tutari" placeholder="Proje tonajı verisi ile proje birim Kg verisinin çarpımı hesaplanacak olup, ilgili para birimi ile gösterilecektir">
                               </div>
                         </div>
-                        <div class="card">
-								<div class="card-header">
-									<h5 class="card-title">Multiple File Upload</h5>
-								</div>
-								<div class="card-body">
-									<div class="custom-file-container" data-upload-id="mySecondImage">
-										<label>Upload (Allow Multiple) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                        <div class="custom-file-container" data-upload-id="mySecondImage">
+										<label>Satın Alma ile ilgili birden fazla dosya seçerek yükleyebilirsiniz<a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image"></a></label>
 										<label class="custom-file-container__custom-file" >
-											<input type="file" class="custom-file-container__custom-file__custom-file-input" multiple>
+											<input name ="servis_dosya" id="servis_dosya" type="file" class="custom-file-container__custom-file__custom-file-input" multiple>
 											<input type="hidden" name="MAX_FILE_SIZE" value="10485760">
 											<span class="custom-file-container__custom-file__custom-file-control"></span>
 										</label>
-										<!-- <div class="custom-file-container__image-preview"></div> -->
-									</div>
-								</div>
-							</div>
+										<div class="custom-file-container__image-preview"></div>
+						</div>
                     </div>
                 </div>
             </div>
@@ -191,6 +199,7 @@
 </div>
 
 <script src="/assets/plugins/fileupload/fileupload.min.js"></script>
+
 <script>
     $(document).ready(function() {
 
