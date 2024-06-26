@@ -1,11 +1,9 @@
 <?php
-$page =  parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-  
+$page = isset($_GET['page']) ? $_GET['page'] : parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 // Başı ve sonundaki / işaretlerini temizleyin
 $page = trim($page, '/');
-
 
 ?>
 <!-- Bootstrap CSS -->
@@ -129,7 +127,7 @@ if (
     || $page == 'components.php' || $page == 'user-asset-details.php' || $page == 'leads-dashboard.php' || $page == 'deals.php' || $page == 'deals-details.php' || $page == 'deals-kanban.php' || $page == 'deals-dashboard.php' || $page == 'analytics.php' || $page == 'assets-category.php' || $page == 'assets-new.php' || $page == 'assets-reports.php' || $page == 'leads.php' || $page == 'activities.php' || $page == 'pipeline.php' || $page == 'apptitude-result.php'
 ) { ?>
 <!-- Datetimepicker CSS -->
-<link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="/assets/css/bootstrap-datetimepicker.min.css">
 
 <?php }
 if ($page == 'events.php') { ?>

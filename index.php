@@ -1,11 +1,10 @@
-
 <?php require_once 'layouts/session.php'; ?>
 <?php include_once 'layouts/head-main.php'; ?>
 
 <head>
 
     <?php include_once 'layouts/head-css.php'; ?>
-    <title><?php echo $page ;?></title>
+    <title>İntek Çelik</title>
     <?php include_once 'layouts/title-meta.php'; ?>
 
 
@@ -16,16 +15,28 @@
 
     <!-- Main Wrapper -->
     <div class="main-wrapper">
+        <div id="loader-wrapper">
+            <div id="loader">
+                <div class="loader-ellips">
+                    <span class="loader-ellips__dot"></span>
+                    <span class="loader-ellips__dot"></span>
+                    <span class="loader-ellips__dot"></span>
+                    <span class="loader-ellips__dot"></span>
+                </div>
+            </div>
+        </div>
+
         <?php include 'layouts/menu.php'; ?>
         <!-- Page Wrapper -->
         <div class="page-wrapper">
 
+      
             <!-- Page Content -->
             <div class="content container-fluid" id="content">
 
                 <?php
-             
-                include('content.php');
+
+                   include_once('content.php');
                 ?>
 
             </div>

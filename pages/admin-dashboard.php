@@ -5,7 +5,9 @@
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
+
 ?>
+
 <!-- Page Header -->
 <div class="page-header">
     <div class="row">
@@ -272,7 +274,7 @@ error_reporting(E_ALL);
                 <h4 class="card-title">Today Absent <span class="badge bg-inverse-danger ms-2">5</span></h4>
                 <div class="leave-info-box">
                     <div class="media d-flex align-items-center">
-                        <a href="profile.html" class="avatar"><img src="assets/img/user.jpg" alt="User Image"></a>
+                        <a href="profile.html" class="avatar"><img src="/assets/img/user.jpg" alt="User Image"></a>
                         <div class="media-body flex-grow-1">
                             <div class="text-sm my-0">Martin Lewis</div>
                         </div>
@@ -289,7 +291,7 @@ error_reporting(E_ALL);
                 </div>
                 <div class="leave-info-box">
                     <div class="media d-flex align-items-center">
-                        <a href="profile.html" class="avatar"><img src="assets/img/user.jpg" alt="User Image"></a>
+                        <a href="profile.html" class="avatar"><img src="/assets/img/user.jpg" alt="User Image"></a>
                         <div class="media-body flex-grow-1">
                             <div class="text-sm my-0">Martin Lewis</div>
                         </div>
@@ -451,7 +453,7 @@ error_reporting(E_ALL);
                             <tr>
                                 <td>
                                     <h2 class="table-avatar">
-                                        <a href="#" class="avatar"><img src="assets/img/profiles/avatar-19.jpg"
+                                        <a href="#" class="avatar"><img src="/assets/img/profiles/avatar-19.jpg"
                                                 alt="User Image"></a>
                                         <a href="client-profile.html">Barry Cuda <span>CEO</span></a>
                                     </h2>
@@ -487,7 +489,7 @@ error_reporting(E_ALL);
                             <tr>
                                 <td>
                                     <h2 class="table-avatar">
-                                        <a href="#" class="avatar"><img src="assets/img/profiles/avatar-19.jpg"
+                                        <a href="#" class="avatar"><img src="/assets/img/profiles/avatar-19.jpg"
                                                 alt="User Image"></a>
                                         <a href="client-profile.html">Tressa Wexler <span>Manager</span></a>
                                     </h2>
@@ -524,7 +526,7 @@ error_reporting(E_ALL);
                                 <td>
                                     <h2 class="table-avatar">
                                         <a href="client-profile.html" class="avatar"><img
-                                                src="assets/img/profiles/avatar-07.jpg" alt="User Image"></a>
+                                                src="/assets/img/profiles/avatar-07.jpg" alt="User Image"></a>
                                         <a href="client-profile.html">Ruby Bartlett <span>CEO</span></a>
                                     </h2>
                                 </td>
@@ -560,7 +562,7 @@ error_reporting(E_ALL);
                                 <td>
                                     <h2 class="table-avatar">
                                         <a href="client-profile.html" class="avatar"><img
-                                                src="assets/img/profiles/avatar-06.jpg" alt="User Image"></a>
+                                                src="/assets/img/profiles/avatar-06.jpg" alt="User Image"></a>
                                         <a href="client-profile.html"> Misty Tison <span>CEO</span></a>
                                     </h2>
                                 </td>
@@ -596,7 +598,7 @@ error_reporting(E_ALL);
                                 <td>
                                     <h2 class="table-avatar">
                                         <a href="client-profile.html" class="avatar"><img
-                                                src="assets/img/profiles/avatar-14.jpg" alt="User Image"></a>
+                                                src="/assets/img/profiles/avatar-14.jpg" alt="User Image"></a>
                                         <a href="client-profile.html"> Daniel Deacon <span>CEO</span></a>
                                     </h2>
                                 </td>

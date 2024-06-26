@@ -16,26 +16,13 @@ if ($page == 'index.php' || $page == '') {
     $page = 'admin-dashboard';
 }
 
-echo "page : " . $page;
-// echo '	<!-- Loader -->
-// 			<div id="loader-wrapper">
-// 				<div id="loader">
-// 					<div class="loader-ellips">
-// 					  <span class="loader-ellips__dot"></span>
-// 					  <span class="loader-ellips__dot"></span>
-// 					  <span class="loader-ellips__dot"></span>
-// 					  <span class="loader-ellips__dot"></span>
-// 					</div>
-// 				</div>
-// 			</div>
-// 			<!-- /Loader -->';
 
 $pagePath = 'pages/' . $page . '.php';
 
 if (file_exists($pagePath)) {
-    include($pagePath);
+    require_once($pagePath);
 } else {
-    include('pages/error-404.php'); // Hata sayfası
+    include('404.php'); // Hata sayfası
 }
 
 

@@ -13,12 +13,12 @@ $(document).ready(function () {
 
   // Loader
 
-  setTimeout(function () {
-    $("#loader-wrapper");
-    setTimeout(function () {
-      $("#loader-wrapper").hide();
-    }, 100);
-  }, 500);
+  // setTimeout(function () {
+  //   $("#loader-wrapper");
+  //   setTimeout(function () {
+  //     $("#loader-wrapper").hide();
+  //   }, 100);
+  // }, 500);
 
   // Sidebar
 
