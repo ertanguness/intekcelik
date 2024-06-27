@@ -199,7 +199,8 @@ h6,
 }
 
 body {
-  font-family: "Nunito SemiBold", sans-serif;
+  font-family: "CircularStd", sans-serif;
+  font-feature-settings: "tnum";
   font-size: 15px;
   font-weight: 400;
   color: #4D5154;

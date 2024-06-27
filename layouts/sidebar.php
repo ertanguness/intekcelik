@@ -23,7 +23,7 @@
 
                 <!-- İMALAT -->
                 <li class="menu-title">
-                    <span>İMALAT</span>
+                    <span>İMALAT YÖNETİMİ</span>
                 </li>
                 <li>
                     <a href="#" class="top-menu"><i class="la la-pencil-alt"></i> <span>Ön İmalat</span></a>
@@ -35,7 +35,7 @@
 
                 <!-- STOK -->
                 <li class="menu-title">
-                    <span><?php echo $page; ?></span>
+                    STOK YÖNETİMİ
                 </li>
 
                 <li>
@@ -53,7 +53,7 @@
 
                 <!-- FİRMA -->
                 <li class="menu-title">
-                    <span>FİRMA</span>
+                    <span>FİRMA YÖNETİMİ</span>
                 </li>
                 <li>
                     <a href="#" class="top-menu" data-page="companies/list"><i class="lab la-buffer"></i> <span>Firmalar</span></a>
