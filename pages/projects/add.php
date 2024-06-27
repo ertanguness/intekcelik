@@ -188,7 +188,7 @@
         </div>
     </div>
     <!-- Fileupload JS -->
-    <script src="/assets/plugins/fileupload/fileupload.min.js"></script>
+    <script src="../assets/plugins/fileupload/fileupload.min.js"></script>
     <script>
         $(".select").select2();
     </script>

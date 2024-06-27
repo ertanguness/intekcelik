@@ -7,14 +7,15 @@ $page = isset($_GET['page']) ? $_GET['page'] : parse_url($_SERVER['REQUEST_URI']
 
 // Başı ve sonundaki / işaretlerini temizleyin
 $page = trim($page, '/');
+$page = trim($page, '#');
 
 // $link = $_SERVER['PHP_SELF'];
 // $link_array = explode('/',$link);
 // $page = end($link_array);
 
-if ($page == 'index.php' || $page == '') {
-    $page = 'admin-dashboard';
-}
+// if ($page == 'index.php' || $page == '') {
+//     $page = 'admin-dashboard';
+// }
 
 
 $pagePath = 'pages/' . $page . '.php';
