@@ -279,3 +279,4 @@ if ($page == 'companies-grid.php' || $page == 'companies.php' || $page == 'compa
 
 <script src="/assets/js/select2.min.js"></script>
 
+

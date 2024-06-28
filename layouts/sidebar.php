@@ -58,24 +58,24 @@
                 <li>
                     <a href="#" class="top-menu" data-page="companies/list"><i class="lab la-buffer"></i> <span>Firmalar</span></a>
                 </li>
-                <!-- DİĞER -->
                 <li class="menu-title">
-                    <span>DİĞER</span>
+                    <span>PERSONEL YÖNETİMİ</span>
+                </li>
+                <li>
+                    <a href="#" class="top-menu" data-page="personel/list"><i class="lab la-buffer"></i> <span>Personel</span></a>
                 </li>
 
                 <li class="submenu">
                     <a href="#"><i class="la la-gear"></i> <span> TANIMLAMALAR</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
-                        <li><a href="#" data-page="projects/add">Tedarikçi Firma Tanımlama</a></li>
-                        <li><a href="#" data-page="projects/list">Ana Firma Tanımlama</a></li>
                         <li><a href="#" data-page="projects/list">Kullanıcı Tanımlama</a></li>
-                        <li><a href="#" data-page="projects/list">Birim Sorumlusu TanımlamaLarı</a></li>
+                        <li><a href="#" data-page="projects/list">Birim Sorumlusu Tanımlama</a></li>
 
-                        <li><a href="#" data-page="projects/list">Proje Durum Tanımlamaları</a></li>
-                        <li><a href="#" data-page="projects/list">Proje Süreç Tanımlamaları</a></li>
-                        <li><a href="#" data-page="projects/list">Ral Kodları Tanımlamaları</a></li>
-                        <li><a href="#" data-page="projects/list">Proje Kategori Tanımlamaları</a></li>
-                        <li><a href="#" data-page="projects/list">Proje Alt Kategori/Pafta Tanımlamaları</a></li>
+                        <li><a href="#" data-page="projects/list">Proje Durum Tanımlama</a></li>
+                        <li><a href="#" data-page="projects/list">Proje Süreç Tanımlama</a></li>
+                        <li><a href="#" data-page="projects/list">Ral Kodları Tanımlama</a></li>
+                        <li><a href="#" data-page="projects/list">Proje Kategori Tanımlama</a></li>
+                        <li><a href="#" data-page="projects/list">Proje Alt Kategori/Pafta Tanımlama</a></li>
                     </ul>
                 </li>
                 <li>
