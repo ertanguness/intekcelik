@@ -60,12 +60,7 @@
 <!-- /Search Filter -->
 <div class="filter-section">
     <ul>
-        <li>
-            <div class="view-icons">
-                <a href="companies.html" class="list-view btn btn-link active"><i class="las la-list"></i></a>
-                <a href="companies-grid.html" class="grid-view btn btn-link"><i class="las la-th"></i></a>
-            </div>
-        </li>
+        
         <li>
             <div class="form-sort">
                 <i class="las la-sort-alpha-up-alt"></i>
@@ -78,241 +73,7 @@
                 </select>
             </div>
         </li>
-        <li>
-            <div class="form-sorts dropdown">
-                <a href="javascript:void(0);" class="dropdown-toggle" id="table-filter"><i class="las la-filter me-2"></i>Filtrele</a>
-                <div class="filter-dropdown-menu">
-                    <div class="filter-set-view">
-                        <div class="filter-set-head">
-                            <h4>Filtrele</h4>
-                        </div>
-                        <div class="accordion" id="accordionExample">
-                            <div class="filter-set-content">
-                                <div class="filter-set-content-head">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Değerlendirme<i class="las la-angle-right"></i></a>
-                                </div>
-                                <div class="filter-set-contents accordion-collapse collapse show" id="collapseOne" data-bs-parent="#accordionExample">
-                                    <ul>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox" checked>
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="rating">
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star filled"></i>
-                                                <span>5.0</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="rating">
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <span>4.0</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="rating">
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <span>3.0</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="rating">
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <span>2.0</span>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="rating">
-                                                <i class="fa fa-star filled"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <i class="fa fa-star"></i>
-                                                <span>1.0</span>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="filter-set-content">
-                                <div class="filter-set-content-head">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Sahibi<i class="las la-angle-right"></i></a>
-                                </div>
-                                <div class="filter-set-contents accordion-collapse collapse" id="collapseTwo" data-bs-parent="#accordionExample">
-                                    <ul>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox" checked>
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="collapse-inside-text">
-                                                <h5>Hendry</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="collapse-inside-text">
-                                                <h5>Guillory</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="collapse-inside-text">
-                                                <h5>Jami</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="collapse-inside-text">
-                                                <h5>Theresa</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="collapse-inside-text">
-                                                <h5>Espinosa</h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="filter-set-content">
-                                <div class="filter-set-content-head">
-                                    <a href="#" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Etiketler<i class="las la-angle-right"></i></a>
-                                </div>
-                                <div class="filter-set-contents accordion-collapse collapse" id="collapseThree" data-bs-parent="#accordionExample">
-                                    <ul>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox" checked>
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="collapse-inside-text">
-                                                <h5>Promosyon</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="collapse-inside-text">
-                                                <h5>Değerlendirildi</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="collapse-inside-text">
-                                                <h5>Reddedildi</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="collapse-inside-text">
-                                                <h5>İşbirliği</h5>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="filter-checks">
-                                                <label class="checkboxs">
-                                                    <input type="checkbox">
-                                                    <span class="checkmarks"></span>
-                                                </label>
-                                            </div>
-                                            <div class="collapse-inside-text">
-                                                <h5>Aramalar</h5>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="filter-reset-btns">
-                        <a href="#" class="btn btn-light">Sıfırla</a>
-                        <a href="#" class="btn btn-primary">Filtrele</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </li>
+
     <li>
         <div class="search-set">
             <div class="search-input">
@@ -416,45 +177,45 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
-                                            <label class="col-form-label">Firma Adı <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
+                                            <label class="col-form-label" for="firma_adi">Firma Adı <span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text" id="firma_adi" name="firma_adi">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
-                                                <label class="col-form-label">E-posta <span class="text-danger"> *</span></label>
-                                                <input class="form-control" type="email">                                             
+                                                <label class="col-form-label" for="eposta">E-posta <span class="text-danger"> *</span></label>
+                                                <input class="form-control" type="email" id="eposta" name="eposta">                                             
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
-                                            <label class="col-form-label">Telefon Numarası 1<span class="text-danger"> *</span></label>
-                                            <input class="form-control" type="text">
+                                            <label class="col-form-label" for="telefon1">Telefon Numarası 1<span class="text-danger"> *</span></label>
+                                            <input class="form-control" type="text" id="telefon1" name="telefon1">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
-                                            <label class="col-form-label">Telefon Numarası 2 </label>
-                                            <input class="form-control" type="text">
+                                            <label class="col-form-label" for="telefon2">Telefon Numarası 2 </label>
+                                            <input class="form-control" type="text" id="telefon2" name="telefon2">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
-                                            <label class="col-form-label">Faks </label>
-                                            <input class="form-control" type="text">
+                                            <label class="col-form-label" for="faks">Faks </label>
+                                            <input class="form-control" type="text" id="faks" name="faks">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
-                                            <label class="col-form-label">Web Sitesi</label>
-                                            <input class="form-control" type="text">
+                                            <label class="col-form-label" for="web_sitesi">Web Sitesi</label>
+                                            <input class="form-control" type="text" id="web_sitesi" name="web_sitesi">
                                         </div>
                                     </div>
                                     
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
-                                            <label class="col-form-label">Kategori <span class="text-danger">*</span></label>
-                                            <select class="select">
+                                            <label class="col-form-label" for="kategori">Kategori <span class="text-danger">*</span></label>
+                                            <select class="select" id="kategori" name="kategori">
                                                 <option>Seç</option>
                                                 <option>Ana Firma</option>
                                                 <option>Tedarikçi</option>
@@ -464,23 +225,23 @@
                                     
                                     <div class=" col-md-6">
                                         <div class="input-block mb-3">
-                                            <label class="col-form-label">Sektör <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
+                                            <label class="col-form-label" for="sektor">Sektör <span class="text-danger">*</span></label>
+                                            <input class="form-control" type="text" id="sektor" name="sektor">
                                         </div>
                                     </div>
                                     
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
-                                            <label class="col-form-label">Yetkili <span class="text-danger">*</span></label>
-                                            <select class="select">
+                                            <label class="col-form-label" for="yetkili">Yetkili <span class="text-danger">*</span></label>
+                                            <select class="select" id="yetkili" name="yetkili">
                                                 <option>TANIMLAMALARDAN GELECEK</option>
                                             </select>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
-                                            <label class="col-form-label">Para Birimi <span class="text-danger">*</span></label>
-                                            <select class="select">
+                                            <label class="col-form-label" for="para_birimi">Para Birimi <span class="text-danger">*</span></label>
+                                            <select class="select" id="para_birimi" name="para_birimi">
                                                 <option>Seç</option>
                                                 <option>₺</option>
                                                 <option>$</option>
@@ -491,129 +252,20 @@
                                    
                                     <div class="col-lg-12">
                                         <div class="input-block mb-3">
-                                            <label class="col-form-label">Firma Hakkında<span class="text-danger">*</span></label>
-                                            <textarea class="form-control"></textarea>
+                                            <label class="col-form-label" for="firma_hakkinda">Firma Hakkında<span class="text-danger">*</span></label>
+                                            <textarea class="form-control" id="firma_hakkinda" name="firma_hakkinda"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div style="text-align: right;">
-                    <button class="btn btn-primary next" type="button">Kaydet</button>
-                </div>                            </div>
+                                    <button class="btn btn-primary next" type="button">Kaydet</button>
+                                </div>
+                            </div>
                         </form>
                     </fieldset>
                 </div>
-                <div class="add-info-fieldset">
-                    <fieldset>
-                        <div class="add-vendor-member">
-                            <form action="company.html">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Ülke <span class="text-danger">*</span></label>
-                                            <select class="select">
-                                                <option>Seç</option>
-                                                <option>Hindistan</option>
-                                                <option>Amerika Birleşik Devletleri</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Şehir <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Adres Satırı <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Adres Satırı 1 <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Adres Satırı 2 <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Posta Kodu <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary next" type="button">İleri</button>
-                                <button class="btn btn-secondary previous" type="button">Geri</button>
-                            </form>
-                        </div>
-                    </fieldset>
-                </div>
-                <div class="add-info-fieldset">
-                    <fieldset>
-                        <div class="add-vendor-member">
-                            <form action="company.html">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Facebook</label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Twitter</label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Google Plus</label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">LinkedIn</label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary next" type="button">İleri</button>
-                                <button class="btn btn-secondary previous" type="button">Geri</button>
-                            </form>
-                        </div>
-                    </fieldset>
-                </div>
-                <div class="add-info-fieldset">
-                    <fieldset>
-                        <div class="add-vendor-member">
-                            <form action="company.html">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Erişim 1 <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Erişim 2 <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary w-100" type="button">Kaydet</button>
-                                <button class="btn btn-secondary previous" type="button">Geri</button>
-                            </form>
-                        </div>
-                    </fieldset>
-                </div>
+                
+                
             </div>
         </div>
     </div>
@@ -650,43 +302,43 @@
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
                                             <label class="col-form-label">Firma Adı <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" id="edit_firma_adi" name="edit_firma_adi">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
                                                 <label class="col-form-label">E-posta <span class="text-danger"> *</span></label>
-                                                <input class="form-control" type="email">                                             
+                                                <input class="form-control" type="email" id="edit_eposta" name="edit_eposta">                                             
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
                                             <label class="col-form-label">Telefon Numarası 1<span class="text-danger"> *</span></label>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" id="edit_telefon_1" name="edit_telefon_1">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
                                             <label class="col-form-label">Telefon Numarası 2 </label>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" id="edit_telefon_2" name="edit_telefon_2">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
                                             <label class="col-form-label">Faks </label>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" id="edit_faks" name="edit_faks">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
                                             <label class="col-form-label">Web Sitesi</label>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" id="edit_web_sitesi" name="edit_web_sitesi">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
                                             <label class="col-form-label">Kategori <span class="text-danger">*</span></label>
-                                            <select class="select">
+                                            <select class="select" id="edit_kategori" name="edit_kategori">
                                                 <option>Seç</option>
                                                 <option>Ana Firma</option>
                                                 <option>Tedarikçi</option>
@@ -694,27 +346,27 @@
                                             </select>
                                         </div>
                                     </div>
-                                    
-                                    
+
+
                                     <div class=" col-md-6">
                                         <div class="input-block mb-3">
                                             <label class="col-form-label">Sektör <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
+                                            <input class="form-control" type="text" id="edit_sektor" name="edit_sektor">
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
                                             <label class="col-form-label">Yetkili <span class="text-danger">*</span></label>
-                                            <select class="select">
+                                            <select class="select" id="edit_yetkili" name="edit_yetkili">
                                                 <option>TANIMLAMALARDAN GELECEK</option>
                                             </select>
                                         </div>
                                     </div>
-                                    
+
                                     <div class="col-md-6">
                                         <div class="input-block mb-3">
                                             <label class="col-form-label">Para Birimi <span class="text-danger">*</span></label>
-                                            <select class="select">
+                                            <select class="select" id="edit_para_birimi" name="edit_para_birimi">
                                                 <option>Seç</option>
                                                 <option>₺</option>
                                                 <option>$</option>
@@ -722,132 +374,24 @@
                                             </select>
                                         </div>
                                     </div>
-                                   
+
                                     <div class="col-lg-12">
                                         <div class="input-block mb-3">
                                             <label class="col-form-label">Firma Hakkında<span class="text-danger">*</span></label>
-                                            <textarea class="form-control"></textarea>
+                                            <textarea class="form-control" id="edit_firma_hakkinda" name="edit_firma_hakkinda"></textarea>
                                         </div>
                                     </div>
                                 </div>
                                 <div style="text-align: right;">
-                    <button class="btn btn-primary next" type="button">Kaydet</button>
-                </div>                            </div>
+                                    <button class="btn btn-primary next" type="button">Kaydet</button>
+                                </div>
+                            </div>
                         </form>
                     </fieldset>
                 </div>
-                <div class="add-info-fieldset">
-                    <fieldset>
-                        <div class="add-vendor-member">
-                            <form action="company.html">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Ülke <span class="text-danger">*</span></label>
-                                            <select class="select">
-                                                <option>Seç</option>
-                                                <option>Hindistan</option>
-                                                <option>Amerika Birleşik Devletleri</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Şehir <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Adres Satırı <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Adres Satırı 1 <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Adres Satırı 2 <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Posta Kodu <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary next" type="button">İleri</button>
-                                <button class="btn btn-secondary previous" type="button">Geri</button>
-                            </form>
-                        </div>
-                    </fieldset>
-                </div>
-                <div class="add-info-fieldset">
-                    <fieldset>
-                        <div class="add-vendor-member">
-                            <form action="company.html">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Facebook</label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Twitter</label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Google Plus</label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">LinkedIn</label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary next" type="button">İleri</button>
-                                <button class="btn btn-secondary previous" type="button">Geri</button>
-                            </form>
-                        </div>
-                    </fieldset>
-                </div>
-                <div class="add-info-fieldset">
-                    <fieldset>
-                        <div class="add-vendor-member">
-                            <form action="company.html">
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Erişim 1 <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <div class="input-block mb-3">
-                                            <label class="col-form-label">Erişim 2 <span class="text-danger">*</span></label>
-                                            <input class="form-control" type="text">
-                                        </div>
-                                    </div>
-                                </div>
-                                <button class="btn btn-primary w-100" type="button">Kaydet</button>
-                                <button class="btn btn-secondary previous" type="button">Geri</button>
-                            </form>
-                        </div>
-                    </fieldset>
-                </div>
+
+
+
             </div>
         </div>
     </div>
