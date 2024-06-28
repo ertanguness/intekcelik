@@ -5,4 +5,4 @@
 <meta name="author" content="Dreamguys - PHP Admin Template">
 <meta name="robots" content="noindex, nofollow">
 <!-- App favicon -->
-<link rel="shortcut icon" href="assets/img/favicon.png">
+<link rel="shortcut icon" href="/assets/img/favicon.png">

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 
+=======
+<!-- Sayfa Başlığı -->
+>>>>>>> e121439a215ef85954c5270bc7dd88b43d540be7
 <div class="page-header">
     <div class="row align-items-center">
         <div class="col-md-4">
@@ -34,6 +38,7 @@
                     </li>
                 </ul>
                 <div class="tab-content pt-0" id="myTabContent2">
+<<<<<<< HEAD
                 <div class="tab-pane fade show active p-4 border-bottom-0" id="products-tab-pane" role="tabpanel" aria-labelledby="products-tab" tabindex="0">
                         
                         <div class="input-block mb-3 row">
@@ -191,6 +196,137 @@
 										<div class="custom-file-container__image-preview"></div>
 						</div>
                     </div>
+=======
+                    <div class="tab-pane fade show active p-0 border-bottom-0" id="products-tab-pane" role="tabpanel" aria-labelledby="products-tab" tabindex="0">
+
+                        <div class="input-block mb-4 row">
+                            <label class="col-lg-2 col-form-label">Proje Kodu <span style="color:red">(*)</span></label>
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control" required name="projekodu" id="projekodu">
+                            </div>
+                            <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
+                            <label class="col-lg-2 col-form-label">Teknik Resim Sorumlusu <span style="color:red">(*)</span></label>
+                            <div class="col-lg-3">
+                                <select class="select" required name="tekresim_sorumlusu" id="tekresim_sorumlusu">
+                                    <option>TANIMLAMALARDAN GELECEK</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-block mb-3 row">
+                            <label class="col-lg-2 col-form-label">Proje Adı <span style="color:red">(*)</span></label>
+                            <div class="col-lg-3">
+                                <input type="text" class="form-control" required name="projeadi" id="projeadi">
+                            </div>
+                            <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
+                            <label class="col-lg-2 col-form-label">İmalat Sorumlusu <span style="color:red">(*)</span></label>
+                            <div class="col-lg-3">
+                                <select class="select" required name="imalat_sorumlusu" id="imalat_sorumlusu">
+                                    <option>TANIMLAMALARDAN GELECEK</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-block mb-3 row">
+                            <label class="col-lg-2 col-form-label">Proje Kategorisi <span style="color:red">(*)</span></label>
+                            <div class="col-lg-3">
+                                <select class="select" required name="kategori" id="kategori">
+                                    <option>TANIMLAMALARDAN GELECEK</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
+                            <label class="col-lg-2 col-form-label">Kalite Sorumlusu <span style="color:red">(*)</span></label>
+                            <div class="col-lg-3">
+                                <select class="select" required name="kalite_sorumlusu" id="kalite_sorumlusu">
+                                    <option>TANIMLAMALARDAN GELECEK</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="input-block mb-3 row">
+                            <label class="col-lg-2 col-form-label">Proje İleten Bilgisi <span style="color:red">(*)</span></label>
+                            <div class="col-lg-3">
+                                <select class="select" required name="ileten" id="ileten">
+                                    <option>TANIMLAMALARDAN GELECEK</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
+                            <label class="col-lg-2 col-form-label">Proje Durumu<span style="color:red">(*)</span></label>
+                            <div class="col-lg-3">
+                                <select class="select" required name="projedurumu" id="projedurumu">
+                                    <option>TANIMLAMALARDAN GELECEK</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="input-block mb-3 row">
+                            <label class="col-lg-2 col-form-label">Ral Kodu <span style="color:red">(*)</span></label>
+                            <div class="col-lg-3">
+                                <select class="select" required name="ralkodu" id="ralkodu">
+                                    <option>TANIMLAMALARDAN GELECEK</option>
+                                </select>
+                            </div>
+                            <div class="col-lg-1"></div> <!-- Bu satır boşluk eklemek için -->
+                            <label class="col-lg-2 col-form-label"></label>
+                            <div class="col-lg-2">
+                                <input type="checkbox" name="boyali" id="boyali"> Boyalı
+                            </div>
+                            <div class="col-lg-2">
+                                <input type="checkbox" name="galvanizli" id="galvanizli"> Galvanizli
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                        <label class="col-lg-3 col-form-label">İmalat Sorumlusu <span style="color:red">(*)</span></label>
+                        <div class="col-lg-9">
+                            <select class="select" required name="imalat_sorumlusu" id="imalat_sorumlusu">
+                                <option>TANIMALAMALARDAN GELECEK</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                        <label class="col-lg-3 col-form-label">Kalite Sorumlusu <span style="color:red">(*)</span></label>
+                        <div class="col-lg-9">
+                            <select class="select" required name="kalite_sorumlusu" id="kalite_sorumlusu">
+                                <option>TANIMALAMALARDAN GELECEK</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                        <label class="col-lg-3 col-form-label">Proje Tonajı </label>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control" name="tonaj" id="tonaj" placeholder="Pozların toplamından otomatik hesaplanacak">
+                        </div>
+                    </div>
+                    <div class=" input-block mb-3 row">
+                        <label class="col-lg-3 col-form-label">Kg Birim Fiyat</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" name="birimfiyat" id="birimfiyat">
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" name="parabirimi" id="parabirimi" placeholder="Firma tanımlanırken girilen para birimi cinsinden gelecek">
+                        </div>
+                    </div>
+                    <div class="input-block mb-3 row">
+                        <label class="col-lg-3 col-form-label">Proje Tutarı </label>
+                        <div class="col-lg-9">
+                            <input type="text" class="form-control" name="tonaj" id="tonaj" placeholder="Proje tonajı verisi ile proje birim Kg verisinin çarpımı hesaplanacak olup, ilgili para birimi ile gösterilecektir">
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-primary" name="kaydet" id="kaydet">Kaydet</button>
+                    </div>
+
+           
+
+                    <div class="custom-file-container" data-upload-id="myFirstImage">
+                        <label>Upload (Allow Multiple) <a href="javascript:void(0)" class="custom-file-container__image-clear" title="Clear Image">x</a></label>
+                        <label class="custom-file-container__custom-file">
+                            <input type="file" class="custom-file-container__custom-file__custom-file-input" multiple>
+                            <input type="hidden" name="MAX_FILE_SIZE" value="10485760">
+                            <span class="custom-file-container__custom-file__custom-file-control"></span>
+                        </label>
+                        <div class="custom-file-container__image-preview"></div>
+                    </div>
+
+>>>>>>> e121439a215ef85954c5270bc7dd88b43d540be7
                     </form>
                 </div>
             </div>
@@ -198,6 +334,7 @@
     </div>
    
 
+<<<<<<< HEAD
 <script src="/assets/plugins/fileupload/fileupload.min.js"></script>
 
 <script>
@@ -216,3 +353,18 @@
 
     });
 </script>
+=======
+                        <div class="text-end">
+                            <button type="submit" class="btn btn-primary">Poz Ekle</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fileupload JS -->
+    <script src="../assets/plugins/fileupload/fileupload.min.js"></script>
+    <script>
+        $(".select").select2();
+    </script>
+>>>>>>> e121439a215ef85954c5270bc7dd88b43d540be7

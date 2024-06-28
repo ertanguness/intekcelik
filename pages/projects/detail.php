@@ -79,243 +79,394 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
-                <ul class="nav nav-tabs mb-3 tab-style-6" id="myTab-3" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="products-tab" data-bs-toggle="tab" data-bs-target="#products-tab-pane" type="button" role="tab" aria-controls="products-tab-pane" aria-selected="true"><i class="feather-gift me-1 align-middle d-inline-block"></i>Pozlar</button>
+                <ul class="nav nav-tabs mb-3" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" role="tab" href="#hometab-dropdown" aria-selected="true">Pozlar</a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="sales-tab" data-bs-toggle="tab" data-bs-target="#sales-tab-pane" type="button" role="tab" aria-controls="sales-tab-pane" aria-selected="false"><i class="feather-file me-1 align-middle d-inline-block"></i>İç Kontrol</button>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="javascript:void(0);" role="button" aria-expanded="false">Kalite Kontrol</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" data-bs-toggle="tab" role="tab" href="#homeabout-dropdown" aria-selected="false">İç Kontrol</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0);">Polin Kontrol</a></li>
+                            <li><a class="dropdown-item" href="javascript:void(0);">Kalite Dosyası</a></li>
+
+                        </ul>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profit-tab" data-bs-toggle="tab" data-bs-target="#profit-tab-pane" type="button" role="tab" aria-controls="profit-tab-pane" aria-selected="false"><i class="feather-file-text me-1 align-middle d-inline-block"></i>Polin Kontrol</button>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" role="tab" href="#hometab-dropdown" aria-selected="true">Uygunsuz Bildirimleri</a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="expenses-tab" data-bs-toggle="tab" data-bs-target="#expenses-tab-pane" type="button" role="tab" aria-controls="expenses-tab-pane" aria-selected="false"><i class="feather-file-minus me-1 align-middle d-inline-block"></i>Uygunsuzluk Bildirimleri</button>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" role="tab" href="#homeproducts-dropdown" aria-selected="false">Sevkiyat Bilgileri</a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="expenses-tab" data-bs-toggle="tab" data-bs-target="#expenses-tab-pane" type="button" role="tab" aria-controls="expenses-tab-pane" aria-selected="false"><i class="feather-file-minus me-1 align-middle d-inline-block"></i>Sevkiyat Bilgileri</button>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Dökümanlar</a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="expenses-tab" data-bs-toggle="tab" data-bs-target="#expenses-tab-pane" type="button" role="tab" aria-controls="expenses-tab-pane" aria-selected="false"><i class="feather-file-minus me-1 align-middle d-inline-block"></i>Dökümanlar</button>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Proje Notları </a>
                     </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="expenses-tab" data-bs-toggle="tab" data-bs-target="#expenses-tab-pane" type="button" role="tab" aria-controls="expenses-tab-pane" aria-selected="false"><i class="feather-file-minus me-1 align-middle d-inline-block"></i>Kalite Dosyası</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="expenses-tab" data-bs-toggle="tab" data-bs-target="#expenses-tab-pane" type="button" role="tab" aria-controls="expenses-tab-pane" aria-selected="false"><i class="feather-file-minus me-1 align-middle d-inline-block"></i>Proje Notları</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="expenses-tab" data-bs-toggle="tab" data-bs-target="#expenses-tab-pane" type="button" role="tab" aria-controls="expenses-tab-pane" aria-selected="false"><i class="feather-file-minus me-1 align-middle d-inline-block"></i>Satın Alma Bilgileri</button>
+                    <li class="nav-item">
+                        <a class="nav-link disabled">Satın Alma Bilgileri</a>
                     </li>
                 </ul>
-                <div class="tab-content pt-0" id="myTabContent2">
-                    <div class="tab-pane fade show active p-0 border-bottom-0" id="products-tab-pane" role="tabpanel" aria-labelledby="products-tab" tabindex="0">
-                        <div class="table-responsive">
-                            <table class="table mb-0">
-                                <thead>
-                                    <tr>
-                                        <th scope="col">Poz No</th>
-                                        <th scope="col">Adet</th>
-                                        <th scope="col">...</th>
-                                        <th scope="col">...</th>
-                                        <th scope="col">...</th>
-                                        <th scope="col">...</th>
-                                        <th scope="col">...</th>
-                                        <th scope="col">...</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <th scope="row">
-                                            <span class="avatar avatar-sm">
-                                                <img src="assets/img/img-02.jpg" alt="img">
-                                            </span>
-                                        </th>
-                                        <td>Monitor</td>
-                                        <td>Gadgets</td>
-                                        <td>$1,299.00</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <span class="avatar avatar-sm">
-                                                <img src="assets/img/img3.jpg" alt="img">
-                                            </span>
-                                        </th>
-                                        <td>Keyboard</td>
-                                        <td>Gadgets</td>
-                                        <td>$7,249.29</td>
-                                    </tr>
-                                    <tr>
-                                        <th scope="row">
-                                            <span class="avatar avatar-sm">
-                                                <img src="assets/img/media/media-6.jpg" alt="img">
-                                            </span>
-                                        </th>
-                                        <td>Shoes</td>
-                                        <td>Footwear</td>
-                                        <td>$799.00</td>
-                                    </tr>
-                                </tbody>
-
-                            </table>
-                            <div class="row">
-                                <ul class="nav nav-tabs tab-style-2 nav-justified mb-3 d-sm-flex d-block" id="myTab1" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="order-tab" data-bs-toggle="tab" data-bs-target="#order-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true"><i class="fa-solid fa-gift me-1 align-middle"></i>Yeni Poz Ekle</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="confirmed-tab" data-bs-toggle="tab" data-bs-target="#confirm-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"><i class="fa-solid fa-check me-1 align-middle"></i>Excelden Veri Aktar</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="shipped-tab" data-bs-toggle="tab" data-bs-target="#shipped-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"><i class="fa-solid fa-bag-shopping me-1 align-middle"></i>Revizyon Ekle</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="delivered-tab" data-bs-toggle="tab" data-bs-target="#delivered-tab-pane" type="button" role="tab" aria-selected="false"><i class="fa-solid fa-truck me-1 align-middle"></i>Uygunsuzluk Bildirimi</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="delivered-tab" data-bs-toggle="tab" data-bs-target="#delivered-tab-pane" type="button" role="tab" aria-selected="false"><i class="fa-solid fa-truck me-1 align-middle"></i>Yetkili Atamaları</button>
-                                    </li>
-                                </ul>
+                <div class="tab-content pt-0">
+                    <div class="tab-pane show active text-muted" id="hometab-dropdown" role="tabpanel">
+                        <div class="col-md-12">
+                            <div class="table-responsive">
+                                <table class="table table-striped custom-table datatable contact-table">
+                                    <thead>
+                                        <tr>
+                                            <th class="no-sort"></th>
+                                            <th>Lead Name</th>
+                                            <th>Company Name</th>
+                                            <th>Phone</th>
+                                            <th>Email</th>
+                                            <th>Lead Status</th>
+                                            <th>Created Date</th>
+                                            <th>Lead Owner</th>
+                                            <th class="no-sort text-end">Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <div class="set-star star-select">
+                                                    <i class="fa fa-star filled"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h2>
+                                                    <a href="#" class="profile-split">Collins</a>
+                                                </h2>
+                                            </td>
+                                            <td>
+                                                <h2 class="table-avatar d-flex align-items-center">
+                                                    <a href="profile.html" class="company-img"><img src="assets/img/icons/company-icon-01.svg" alt="User Image"></a>
+                                                    <a href="profile.html" class="profile-split">NovaWaveLLC</a>
+                                                </h2>
+                                            </td>
+                                            <td>+1 875455453</td>
+                                            <td>Robertson@example.com</td>
+                                            <td><span class="badge badge-soft-success">Closed</span></td>
+                                            <td>10 Feb 2024, 09:00 am</td>
+                                            <td>Hendry</td>
+                                            <td class="text-end">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leads"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_leads"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                        <a class="dropdown-item" href="leads-details.html"><i class="fa-regular fa-eye"></i> Preview</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="set-star star-select">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h2>
+                                                    <a href="#" class="profile-split">Konopelski</a>
+                                                </h2>
+                                            </td>
+                                            <td>
+                                                <h2 class="table-avatar d-flex align-items-center">
+                                                    <a href="profile.html" class="company-img"><img src="assets/img/icons/company-icon-02.svg" alt="User Image"></a>
+                                                    <a href="profile.html" class="profile-split">BlueSky Industries</a>
+                                                </h2>
+                                            </td>
+                                            <td>+1 989757485</td>
+                                            <td>sharon@example.com</td>
+                                            <td><span class="badge badge-soft-success">Closed</span></td>
+                                            <td>24 Feb 2024, 12:20 pm</td>
+                                            <td>Guillory</td>
+                                            <td class="text-end">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leads"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_leads"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                        <a class="dropdown-item" href="leads-details.html"><i class="fa-regular fa-eye"></i> Preview</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="set-star star-select">
+                                                    <i class="fa fa-star filled"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h2>
+                                                    <a href="#" class="profile-split">Adams</a>
+                                                </h2>
+                                            </td>
+                                            <td>
+                                                <h2 class="table-avatar d-flex align-items-center">
+                                                    <a href="profile.html" class="company-img"><img src="assets/img/icons/company-icon-03.svg" alt="User Image"></a>
+                                                    <a href="profile.html" class="profile-split">SilverHawk</a>
+                                                </h2>
+                                            </td>
+                                            <td>+1 546555455</td>
+                                            <td>Vaughan12@example.com</td>
+                                            <td><span class="badge badge-soft-info">Not Contacted</span></td>
+                                            <td>5 Mar 2024, 10:00 am</td>
+                                            <td>Jami</td>
+                                            <td class="text-end">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leads"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_leads"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                        <a class="dropdown-item" href="leads-details.html"><i class="fa-regular fa-eye"></i> Preview</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="set-star star-select">
+                                                    <i class="fa fa-star filled"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h2>
+                                                    <a href="#" class="profile-split">Schumm</a>
+                                                </h2>
+                                            </td>
+                                            <td>
+                                                <h2 class="table-avatar d-flex align-items-center">
+                                                    <a href="profile.html" class="company-img"><img src="assets/img/icons/company-icon-04.svg" alt="User Image"></a>
+                                                    <a href="profile.html" class="profile-split">SummitPeak</a>
+                                                </h2>
+                                            </td>
+                                            <td>+1 454478787</td>
+                                            <td>Jessica13@example.com</td>
+                                            <td><span class="badge badge-soft-warning">Contacted</span></td>
+                                            <td>17 Mar 2024, 02:00 pm</td>
+                                            <td>Theresa</td>
+                                            <td class="text-end">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leads"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_leads"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                        <a class="dropdown-item" href="leads-details.html"><i class="fa-regular fa-eye"></i> Preview</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="set-star star-select">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h2>
+                                                    <a href="#" class="profile-split">Wisozk</a>
+                                                </h2>
+                                            </td>
+                                            <td>
+                                                <h2 class="table-avatar d-flex align-items-center">
+                                                    <a href="profile.html" class="company-img"><img src="assets/img/icons/company-icon-05.svg" alt="User Image"></a>
+                                                    <a href="profile.html" class="profile-split">RiverStone Ventur</a>
+                                                </h2>
+                                            </td>
+                                            <td>+1 124547845</td>
+                                            <td>CarolTho3@example.com</td>
+                                            <td><span class="badge badge-soft-success">Closed</span></td>
+                                            <td>8 Apr 2024, 11:00 am</td>
+                                            <td>Espinosa</td>
+                                            <td class="text-end">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leads"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_leads"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                        <a class="dropdown-item" href="leads-details.html"><i class="fa-regular fa-eye"></i> Preview</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="set-star star-select">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h2>
+                                                    <a href="#" class="profile-split">Heller</a>
+                                                </h2>
+                                            </td>
+                                            <td>
+                                                <h2 class="table-avatar d-flex align-items-center">
+                                                    <a href="profile.html" class="company-img"><img src="assets/img/icons/company-icon-06.svg" alt="User Image"></a>
+                                                    <a href="profile.html" class="profile-split">Bright Bridge Grp</a>
+                                                </h2>
+                                            </td>
+                                            <td>+1 478845447</td>
+                                            <td>Dawnmercha@example.com</td>
+                                            <td><span class="badge badge-soft-success">Closed</span></td>
+                                            <td>20 Apr 2024, 03:15 pm</td>
+                                            <td>Martin</td>
+                                            <td class="text-end">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leads"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_leads"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                        <a class="dropdown-item" href="leads-details.html"><i class="fa-regular fa-eye"></i> Preview</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="set-star star-select">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h2>
+                                                    <a href="#" class="profile-split">Gutkowski</a>
+                                                </h2>
+                                            </td>
+                                            <td>
+                                                <h2 class="table-avatar d-flex align-items-center">
+                                                    <a href="profile.html" class="company-img"><img src="assets/img/icons/company-icon-07.svg" alt="User Image"></a>
+                                                    <a href="profile.html" class="profile-split">CoastalStar Co.</a>
+                                                </h2>
+                                            </td>
+                                            <td>+1 215544845</td>
+                                            <td>Rachel@example.com</td>
+                                            <td><span class="badge badge-soft-success">Closed</span></td>
+                                            <td>12 May 2024, 08:30 am</td>
+                                            <td>Newell</td>
+                                            <td class="text-end">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leads"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_leads"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                        <a class="dropdown-item" href="leads-details.html"><i class="fa-regular fa-eye"></i> Preview</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="set-star star-select">
+                                                    <i class="fa fa-star filled"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h2>
+                                                    <a href="#" class="profile-split">Walter</a>
+                                                </h2>
+                                            </td>
+                                            <td>
+                                                <h2 class="table-avatar d-flex align-items-center">
+                                                    <a href="profile.html" class="company-img"><img src="assets/img/icons/company-icon-08.svg" alt="User Image"></a>
+                                                    <a href="profile.html" class="profile-split">HarborView</a>
+                                                </h2>
+                                            </td>
+                                            <td>+1 121145471</td>
+                                            <td>Jonelle@example.com</td>
+                                            <td><span class="badge badge-soft-success">Closed</span></td>
+                                            <td>26 May 2024, 04:10 pm</td>
+                                            <td>Janet</td>
+                                            <td class="text-end">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leads"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_leads"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                        <a class="dropdown-item" href="leads-details.html"><i class="fa-regular fa-eye"></i> Preview</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="set-star star-select">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h2>
+                                                    <a href="#" class="profile-split">Hansen</a>
+                                                </h2>
+                                            </td>
+                                            <td>
+                                                <h2 class="table-avatar d-flex align-items-center">
+                                                    <a href="profile.html" class="company-img"><img src="assets/img/icons/company-icon-09.svg" alt="User Image"></a>
+                                                    <a href="profile.html" class="profile-split">Golden Gate Ltd</a>
+                                                </h2>
+                                            </td>
+                                            <td>+1 321454789</td>
+                                            <td>Jonathan@example.com</td>
+                                            <td><span class="badge badge-soft-success">Closed</span></td>
+                                            <td>13 June 2024, 10:30 am</td>
+                                            <td>Craig</td>
+                                            <td class="text-end">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leads"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_leads"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                        <a class="dropdown-item" href="leads-details.html"><i class="fa-regular fa-eye"></i> Preview</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="set-star star-select">
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <h2>
+                                                    <a href="#" class="profile-split">Leuschke</a>
+                                                </h2>
+                                            </td>
+                                            <td>
+                                                <h2 class="table-avatar d-flex align-items-center">
+                                                    <a href="profile.html" class="company-img"><img src="assets/img/icons/company-icon-10.svg" alt="User Image"></a>
+                                                    <a href="profile.html" class="profile-split">Redwood Inc</a>
+                                                </h2>
+                                            </td>
+                                            <td>+1 278907145</td>
+                                            <td>brook@example.com</td>
+                                            <td><span class="badge badge-soft-danger">Lost</span></td>
+                                            <td>28 June 2024, 05:40 pm</td>
+                                            <td>Daniel</td>
+                                            <td class="text-end">
+                                                <div class="dropdown dropdown-action">
+                                                    <a href="#" class="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i class="material-icons">more_vert</i></a>
+                                                    <div class="dropdown-menu dropdown-menu-right">
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#edit_leads"><i class="fa-solid fa-pencil m-r-5"></i> Edit</a>
+                                                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#delete_leads"><i class="fa-regular fa-trash-can m-r-5"></i> Delete</a>
+                                                        <a class="dropdown-item" href="leads-details.html"><i class="fa-regular fa-eye"></i> Preview</a>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="sales-tab-pane" role="tabpanel" aria-labelledby="sales-tab" tabindex="0">
-                        <ul class="list-unstyled mb-1">
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        Clothing
-                                    </div>
-                                    <div class="fs-14 fw-semibold">32,138</div>
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        Furniture
-                                    </div>
-                                    <div class="fs-14 fw-semibold">12,123</div>
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        electronics
-                                    </div>
-                                    <div class="fs-14 fw-semibold">9,238</div>
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        food Products
-                                    </div>
-                                    <div class="fs-14 fw-semibold">14,234</div>
-                                </div>
-                            </li>
-                            <li class="mb-0">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        Home Appliances
-                                    </div>
-                                    <div class="fs-14 fw-semibold">10,249</div>
-                                </div>
-                            </li>
-                        </ul>
+
+                    <div class="tab-pane text-muted" id="homeabout-dropdown" role="tabpanel">
+                        How hotel deals can help you live a better life. <b>How celebrity cruises</b> aren't as bad as you think. How cultural solutions can help you predict the future. How to cheat at dog friendly hotels and get away with it.
                     </div>
-                    <div class="tab-pane fade" id="profit-tab-pane" role="tabpanel" aria-labelledby="profit-tab" tabindex="0">
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        Clothing
-                                    </div>
-                                    <div class="fs-14 fw-semibold text-success"><i class="ri-arrow-up-s-fill me-1 align-middle"></i>22.75%
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        electronics
-                                    </div>
-                                    <div class="fs-14 fw-semibold text-success"><i class="ri-arrow-up-s-fill me-1 align-middle"></i>42.24%
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        Furniture
-                                    </div>
-                                    <div class="fs-14 fw-semibold text-success"><i class="ri-arrow-up-s-fill me-1 align-middle"></i>15.23%
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        Home Appliances
-                                    </div>
-                                    <div class="fs-14 fw-semibold text-success"><i class="ri-arrow-up-s-fill me-1 align-middle"></i>15.14%
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="mb-0">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        food Products
-                                    </div>
-                                    <div class="fs-14 fw-semibold text-success"><i class="ri-arrow-up-s-fill me-1 align-middle"></i>31.64%
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-pane fade" id="expenses-tab-pane" role="tabpanel" aria-labelledby="expenses-tab" tabindex="0">
-                        <ul class="list-unstyled mb-0">
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        Clothing
-                                    </div>
-                                    <div class="fs-14 fw-semibold text-danger">-$31,134</div>
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        electronics
-                                    </div>
-                                    <div class="fs-14 fw-semibold text-danger">-$15,256</div>
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        Furniture
-                                    </div>
-                                    <div class="fs-14 fw-semibold text-danger">-$24,156</div>
-                                </div>
-                            </li>
-                            <li class="mb-3">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        Home Appliances
-                                    </div>
-                                    <div class="fs-14 fw-semibold text-danger">-$18,245</div>
-                                </div>
-                            </li>
-                            <li class="mb-0">
-                                <div class="d-flex justify-content-between">
-                                    <div>
-                                        food Products
-                                    </div>
-                                    <div class="fs-14 fw-semibold text-danger">-$18,478</div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+                    <div class="tab-pane text-muted" id="homeproducts-dropdown" role="tabpanel">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's <b>standard dummy text ever since the 1500s</b>, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</div>
                 </div>
             </div>
         </div>
