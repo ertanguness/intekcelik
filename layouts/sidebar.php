@@ -68,14 +68,13 @@
                 <li class="submenu">
                     <a href="#"><i class="la la-gear"></i> <span> TANIMLAMALAR</span> <span class="menu-arrow"></span></a>
                     <ul style="display: none;">
-                        <li><a href="#" data-page="projects/list">Kullanıcı Tanımlama</a></li>
-                        <li><a href="#" data-page="projects/list">Birim Sorumlusu Tanımlama</a></li>
-
-                        <li><a href="#" data-page="projects/list">Proje Durum Tanımlama</a></li>
-                        <li><a href="#" data-page="projects/list">Proje Süreç Tanımlama</a></li>
-                        <li><a href="#" data-page="projects/list">Ral Kodları Tanımlama</a></li>
-                        <li><a href="#" data-page="projects/list">Proje Kategori Tanımlama</a></li>
-                        <li><a href="#" data-page="projects/list">Proje Alt Kategori/Pafta Tanımlama</a></li>
+                        <li><a href="#" data-page="tanımlamalar/kullanici">Kullanıcı Tanımlama</a></li>
+                        <li><a href="#" data-page="tanımlamalar/departman">Departman Tanımlama</a></li>
+                        <li><a href="#" data-page="tanımlamalar/durum">Proje Durum Tanımlama</a></li>
+                        <li><a href="#" data-page="tanımlamalar/surec">Proje Süreç Tanımlama</a></li>
+                        <li><a href="#" data-page="tanımlamalar/ralkodu">Ral Kodları Tanımlama</a></li>
+                        <li><a href="#" data-page="tanımlamalar/kategori">Proje Kategori Tanımlama</a></li>
+                        <li><a href="#" data-page="tanımlamalar/altkategori">Proje Alt Kategori/Pafta Tanımlama</a></li>
                     </ul>
                 </li>
                 <li>
