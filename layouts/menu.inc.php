@@ -9,7 +9,7 @@
 <li class="submenu">
     <a href="#"><i class="la la-cube"></i> <span> Projeler</span> <span class="menu-arrow"></span></a>
     <ul style="display: none;">
-        <li><a class="<?php hasActive("project-new") ?>" onclick="Route('project-new')">Yeni Proje</a></li>
+        <li><a class="<?php hasActive("project-new") ?>" onclick="Route('pages/projects/project-new')">Yeni Proje</a></li>
         <li><a class="<?php hasActive('projects','project-details') ?>" onclick="Route('projects')">Proje Listesi</a></li>
 
     </ul>
@@ -47,8 +47,8 @@
 <li class="submenu">
     <a href="#"><i class="la la-cube"></i> <span> Firmalar</span> <span class="menu-arrow"></span></a>
     <ul style="display: none;">
-    <li><a class="<?php hasActive("customer-new") ?>" href="customer-new.php">Yeni Firma</a></li>
-        <li><a class="<?php hasActive("customers") ?>" onclick="Route('customers')">Firma Listesi</a></li>
+    <li><a class="<?php hasActive("componies") ?>" onclick="Route('pages/companies')">Yeni Firma</a></li>
+        <li><a class="<?php hasActive("customers") ?>" onclick="Route('pages/customers/customers')">Firma Listesi</a></li>
 
     </ul>
 </li>
@@ -61,7 +61,7 @@
     <a href="#"><i class="la la-cube"></i> <span> Personeller</span> <span class="menu-arrow"></span></a>
     <ul style="display: none;">
         <li><a href="chat.php">Yeni Personel</a></li>
-        <li><a class="<?php hasActive("events") ?>" href="events.php">Personel Listesi</a></li>
+        <li><a class="<?php hasActive("list") ?>" onclick="Route('pages/personel/list')">Personel Listesi</a></li>
 
     </ul>
 </li>
@@ -73,14 +73,14 @@
 <li class="submenu">
     <a href="#"><i class="la la-cube"></i> <span> Tanımlamalar</span> <span class="menu-arrow"></span></a>
     <ul style="display: none;">
-        <li><a class="<?php hasActive("events") ?>" onclick="Route('defines-suppliers')">Tedarikçi Firma Tanımlama</a></li>
-        <li><a class="<?php hasActive("events") ?>" href="events.php">Ana Firma Tanımlama</a></li>
-        <li><a class="<?php hasActive("events") ?>" href="events.php">Kullanıcı Tanımlama</a></li>
-        <li><a class="<?php hasActive("events") ?>" href="events.php">Birim Sorumlusu Tanımlama</a></li>
-        <li><a class="<?php hasActive("events") ?>" href="events.php">Proje Durum Tanımlama</a></li>
-        <li><a class="<?php hasActive("events") ?>" href="events.php">Proje Süreç Tanımlama</a></li>
-        <li><a class="<?php hasActive("events") ?>" href="events.php">Ral Kodları Tanımlama</a></li>
-        <li><a class="<?php hasActive("events") ?>" href="events.php">Proje Alt Kategori/Pafta Tanımlama</a></li>
+        <li><a class="<?php hasActive("events") ?>    " onclick="Route('defines-suppliers')">Tedarikçi Firma Tanımlama</a></li>
+        <li><a class="<?php hasActive("events") ?>    " href="events.php">Kullanıcı Tanımlama</a></li>
+        <li><a class="<?php hasActive("departman") ?> " onclick="Route('pages/tanımlamalar/departman')">Birim Sorumlusu Tanımlama</a></li>
+        <li><a class="<?php hasActive("durum") ?>     " onclick="Route('pages/tanımlamalar/durum')">Proje Durum Tanımlama</a></li>
+        <li><a class="<?php hasActive("surec") ?>     " onclick="Route('pages/tanımlamalar/surec')">Proje Süreç Tanımlama</a></li>
+        <li><a class="<?php hasActive("ralkodu") ?>   " onclick="Route('pages/tanımlamalar/ralkodu')">Ral Kodları Tanımlama</a></li>
+        <li><a class="<?php hasActive("kategori") ?>  " onclick="Route('pages/tanımlamalar/kategori')">Ana Kategori Tanımlama</a></li>
+        <li><a class="<?php hasActive("altkategori") ?>" onclick="Route('pages/tanımlamalar/altkategori')">Proje Alt Kategori/Pafta Tanımlama</a></li>
 
     </ul>
 </li>

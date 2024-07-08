@@ -22,28 +22,30 @@
                 <thead>
                     <tr>
                         <th>id</th>
+                        <th>Firma Türü </th>
                         <th>Firma Adı </th>
                         <th>Firma Yetkilisi</th>
                         <th>Firma Adresi</th>
                         <th>Telefon</th>
                         <th>Email Adresi</th>
                         <th>Durum</th>
-                        <th class="text-end">Action</th>
+                        <th class="text-end">İşlem</th>
                     </tr>
                 </thead>
                 <tbody>
                     <?php
-                    $sql = $con->prepare("SELECT * FROM tedarikci_firmalar");
+                    $sql = $con->prepare("SELECT * FROM firmalar");
                     $sql->execute();
                     while ($row = $sql->fetch(PDO::FETCH_OBJ)) {
 
                     ?>
                         <tr>
                             <td><?php echo $row->id; ?></td>
+                            <td>firma türü gelecek</td>
                             <td><?php echo $row->firma_adi; ?></td>
                             <td><?php echo $row->firma_yetkilisi; ?></td>
                             <td><?php echo $row->firma_adresi; ?></td>
-                            <td><?php echo $row->telefon; ?></td>
+                            <td><?php echo $row->telefon1; ?></td>
                             <td><?php echo $row->email_adresi; ?></td>
 
                             <td>
@@ -96,54 +98,103 @@
             
             <div class="modal-body">
                 <form id="suppliersForm" action="">
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            
-                            <label class="col-form-label">Firma Adı <span class="text-danger">*</span></label>
-                            <input class="form-control floating" name="firma_adi" id="firma_adi" type="text">
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label class="col-form-label">Firma Yetkilisi</label>
-                            <input class="form-control" name="firma_yetkilisi" id="firma_yetkilisi" type="text">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label class="col-form-label">Firma Telefon <span class="text-danger">*</span></label>
-                            <input class="form-control" name="telefon" id="telefon" type="text">
-                        </div>
-                        <div class="col-md-6 mb-3">
-                            <label class="col-form-label">Email Adresi</label>
-                            <input class="form-control" name="email_adresi" id="email_adresi" type="text">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 mb-3">
-                            <label class="col-form-label">Durum </label>
-                            <select class="select" name="status" id="status">
-                                <option value="1">Aktif</option>
-                                <option value="0">Pasif</option>
-                            </select>
+                <div class="contact-input-set">
+								<div class="row">
+									<div class="col-md-6">
+										<div class="input-block mb-3">
+											<label class="col-form-label" for="firma_adi">Firma Adı <span class="text-danger">*</span></label>
+											<input class="form-control" type="text" id="firma_adi" name="firma_adi">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="input-block mb-3">
+											<label class="col-form-label" for="firma_yetkilisi">Firma Yetkilisi <span class="text-danger">*</span></label>
+											<input class="form-control" name="firma_yetkilisi" id="firma_yetkilisi" type="text">
+										</div>
+									</div>
+									
+									<div class="col-md-6">
+										<div class="input-block mb-3">
+											<label class="col-form-label" for="telefon1">Telefon Numarası 1<span class="text-danger"> *</span></label>
+											<input class="form-control" type="text" id="telefon1" name="telefon1">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="input-block mb-3">
+											<label class="col-form-label" for="telefon2">Telefon Numarası 2 </label>
+											<input class="form-control" type="text" id="telefon2" name="telefon2">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="input-block mb-3">
+											<label class="col-form-label" for="email_adresi">E-posta <span class="text-danger"> *</span></label>
+											<input class="form-control" type="email" id="email_adresi" name="email_adresi">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="input-block mb-3">
+											<label class="col-form-label" for="faks">Faks </label>
+											<input class="form-control" type="text" id="faks" name="faks">
+										</div>
+									</div>
+									<div class="col-md-6">
+										<div class="input-block mb-3">
+											<label class="col-form-label" for="kategori">Firma Kategorisi <span class="text-danger">*</span></label>
+											<select class="select" id="kategori" name="kategori">
+                                                <option>Firma Türü Seçiniz</option>
+                                                <option>Ana Firma </option>
+                                                <option>Tedarikçi </option>
+											</select>
+										</div>
+									</div>
 
-                        </div>
-                    </div>
-                    <div class="row">
+									<div class=" col-md-6">
+										<div class="input-block mb-3">
+											<label class="col-form-label" for="sektor">Sektör <span class="text-danger">*</span></label>
+											<input class="form-control" type="text" id="sektor" name="sektor">
+										</div>
+									</div>
 
-                        <div class="col-md-12 mb-3">
-                            <label class="col-form-label">Firma Adresi </label>
-                            <textarea class="form-control" name="firma_adresi"></textarea>
-                        </div>
-                    </div>
-                    <div class="submit-section">
-                        <style>
-                            .btn-modal {
-                                padding: 8px 60px;
-                            }
-                        </style>
-                        <button type="button" onclick="customReset()" class="btn btn-outline-secondary rounded-pill btn-modal">Reset</button>
-                        <button class="btn btn-primary rounded-pill btn-modal" id="saveSuppliers">Kaydet</button>
-                        <input type="hidden" value="0" id="supplier_id" name="supplier_id" class="form-control">
-                    </div>
+									
+									<div class="col-md-6">
+										<div class="input-block mb-3">
+											<label class="col-form-label" for="para_birimi">Para Birimi <span class="text-danger">*</span></label>
+											<select class="select" id="para_birimi" name="para_birimi">
+												<option>Seç</option>
+												<option>₺</option>
+												<option>$</option>
+												<option>€</option>
+											</select>
+										</div>
+									</div>
+									<div class="col-md-6">
+									<div class="input-block mb-3">
+										<label class="col-form-label">Durum </label>
+											<select class="select" name="status" id="status">
+												<option value="1">Aktif</option>
+												<option value="0">Pasif</option>
+											</select>
+
+										</div>
+									</div>
+									<div class="col-lg-12">
+										<div class="input-block mb-3">
+											<label class="col-form-label" for="firma_adresi">Firma Hakkında<span class="text-danger">*</span></label>
+											<textarea class="form-control" name="firma_adresi"></textarea>
+										</div>
+									</div>
+								</div>                    
+                                <div class="submit-section">
+                                    <style>
+                                        .btn-modal {
+                                            padding: 8px 60px;
+                                        }
+                                    </style>
+                                    <button type="button" onclick="customReset()" class="btn btn-outline-secondary rounded-pill btn-modal">İptal</button>
+                                    <button class="btn btn-primary rounded-pill btn-modal" id="saveSuppliers">Kaydet</button>
+                                    <input type="hidden" value="0" id="firma_id" name="firma_id" class="form-control">
+                                </div>
+                </div>
                 </form>
             </div>
         </div>

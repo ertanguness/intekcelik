@@ -23,19 +23,24 @@ if ($_POST["action"] == "project-new") {
 }
 
 // tedarikci firma ekleme-güncelleme
-if ($_POST["action"] == "suppliers") {
-    $id = $_POST["supplier_id"];
+if ($_POST["action"] == "saveSuppliers") {
+    $id = $_POST["firma_id"];
     $firma_adi = $_POST["firma_adi"];
     $firma_yetkilisi = $_POST["firma_yetkilisi"];
     $firma_adresi = $_POST["firma_adresi"];
-    $telefon = $_POST["telefon"];
+    $telefon1 = $_POST["telefon1"];
+    $telefon2 = $_POST["telefon2"];
     $email_adresi = $_POST["email_adresi"];
+    $faks = $_POST["faks"];
+    $kategori = $_POST["kategori"];
+    $sektor = $_POST["sektor"];
+    $para_birimi = $_POST["para_birimi"];
     $durum = $_POST["status"];
 
     try {
         if ($id != 0) {
-            $sql = $con->prepare("UPDATE tedarikci_firmalar SET firma_adi = ?, firma_yetkilisi = ?, firma_adresi = ?, telefon = ?, email_adresi = ?, durum = ? WHERE id = ?");
-            $sql->execute(array($firma_adi, $firma_yetkilisi, $firma_adresi, $telefon, $email_adresi, $durum, $id));
+            $sql = $con->prepare("UPDATE firmalar SET firma_adi = ?, firma_yetkilisi = ?, firma_adresi = ?, telefon1 = ?, telefon2 = ?, email_adresi = ?, faks = ?, kategori = ?, sektor = ?, para_birimi = ?, durum = ? WHERE id = ?");
+            $sql->execute(array($firma_adi, $firma_yetkilisi, $firma_adresi, $telefon1, $telefon2, $email_adresi, $faks, $kategori, $sektor, $para_birimi, $durum, $id));
             $res = [
                 "status" => 200,
                 "message" => "Tedarikçi Firma başarıyla güncellendi"
@@ -43,10 +48,8 @@ if ($_POST["action"] == "suppliers") {
             echo json_encode($res);
             exit;
         } else {
-
-
-            $sql = $con->prepare("INSERT INTO tedarikci_firmalar (firma_adi, firma_yetkilisi,firma_adresi,telefon,email_adresi,durum) VALUES (?, ?, ?, ?, ?, ?)");
-            $sql->execute(array($firma_adi, $firma_yetkilisi, $firma_adresi, $telefon, $email_adresi, 1));
+            $sql = $con->prepare("INSERT INTO firmalar (firma_adi, firma_yetkilisi, firma_adresi, telefon1, telefon2, email_adresi, faks, kategori, sektor, para_birimi, durum) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
+            $sql->execute(array($firma_adi, $firma_yetkilisi, $firma_adresi, $telefon1, $telefon2, $email_adresi, $faks, $kategori, $sektor, $para_birimi, 1));
             $res = [
                 "status" => 200,
                 "message" => "Tedarikçi Firma başarıyla eklendi"
@@ -57,11 +60,12 @@ if ($_POST["action"] == "suppliers") {
     } catch (PDOException $e) {
         $res = [
             "status" => 400,
-            "message" => "Error: " . $e->getMessage()
+            "message" => "Hata: " . $e->getMessage()
         ];
         echo json_encode($res);
     }
 }
+
 
 
 
