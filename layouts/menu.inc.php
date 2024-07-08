@@ -47,7 +47,7 @@
 <li class="submenu">
     <a href="#"><i class="la la-cube"></i> <span> Firmalar</span> <span class="menu-arrow"></span></a>
     <ul style="display: none;">
-    <li><a class="<?php hasActive("componies") ?>" onclick="Route('pages/companies')">Yeni Firma</a></li>
+        <!--<li><a class="<?php hasActive("componies") ?>" onclick="Route('pages/companies')">Yeni Firma</a></li>-->
         <li><a class="<?php hasActive("customers") ?>" onclick="Route('pages/customers/customers')">Firma Listesi</a></li>
 
     </ul>
@@ -73,7 +73,6 @@
 <li class="submenu">
     <a href="#"><i class="la la-cube"></i> <span> Tanımlamalar</span> <span class="menu-arrow"></span></a>
     <ul style="display: none;">
-        <li><a class="<?php hasActive("events") ?>    " onclick="Route('defines-suppliers')">Tedarikçi Firma Tanımlama</a></li>
         <li><a class="<?php hasActive("events") ?>    " href="events.php">Kullanıcı Tanımlama</a></li>
         <li><a class="<?php hasActive("departman") ?> " onclick="Route('pages/tanımlamalar/departman')">Birim Sorumlusu Tanımlama</a></li>
         <li><a class="<?php hasActive("durum") ?>     " onclick="Route('pages/tanımlamalar/durum')">Proje Durum Tanımlama</a></li>
