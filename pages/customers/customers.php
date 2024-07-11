@@ -97,7 +97,7 @@
             </div>
             
             <div class="modal-body">
-                <form id="suppliersForm" action="">
+                <form id="suppliersForm" action="" method="post">
                 <div class="contact-input-set">
 								<div class="row">
 									<div class="col-md-6">
@@ -156,51 +156,39 @@
 									</div>
 
 									
-									<div class="col-md-6">
-										<div class="input-block mb-3">
-											<label class="col-form-label" for="para_birimi">Para Birimi <span class="text-danger">*</span></label>
-											<select class="select" id="para_birimi" name="para_birimi">
-												<option>Seç</option>
-												<option>₺</option>
-												<option>$</option>
-												<option>€</option>
-											</select>
-										</div>
-									</div>
-									<div class="col-md-6">
-									<div class="input-block mb-3">
-										<label class="col-form-label">Durum </label>
-											<select class="select" name="status" id="status">
-												<option value="1">Aktif</option>
-												<option value="0">Pasif</option>
-											</select>
+                                    <div class="col-md-6">
+                                        <div class="input-block mb-3">
+                                            <label class="col-form-label" for="status">Durum </label>
+                                            <select class="select" id="status" name="status">
+                                                <option value="1">Aktif</option>
+                                                <option value="0">Pasif</option>
+                                            </select>
+                                        </div>
+                                    </div>
 
-										</div>
-									</div>
-									<div class="col-lg-12">
-										<div class="input-block mb-3">
-											<label class="col-form-label" for="firma_adresi">Firma Hakkında<span class="text-danger">*</span></label>
-											<textarea class="form-control" name="firma_adresi"></textarea>
-										</div>
-									</div>
-								</div>                    
-                                <div class="submit-section">
-                                    <style>
-                                        .btn-modal {
-                                            padding: 8px 60px;
-                                        }
-                                    </style>
-                                    <button type="button" onclick="customReset()" class="btn btn-outline-secondary rounded-pill btn-modal">İptal</button>
-                                    <button class="btn btn-primary rounded-pill btn-modal" id="saveSuppliers">Kaydet</button>
-                                    <input type="hidden" value="0" id="firma_id" name="firma_id" class="form-control">
-                                </div>
-                </div>
+                                    <div class="col-md-12">
+                                        <div class="input-block mb-3">
+                                            <label class="col-form-label" for="firma_adresi">Firma Hakkında<span class="text-danger">*</span></label>
+                                            <textarea class="form-control" name="firma_adresi" id="firma_adresi"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <div class="submit-section">
+                                        <style>
+                                            .btn-modal {
+                                                padding: 8px 60px;
+                                            }
+                                        </style>
+                                        <button type="button" onclick="customReset()" class="btn btn-outline-secondary rounded-pill btn-modal">İptal</button>
+                                        <button class="btn btn-primary rounded-pill btn-modal" id="saveSuppliers">Kaydet</button>
+                                        <input type="hidden" value="0" id="firma_id" name="firma_id" class="form-control">
+                                    </div>
+                </div></div>
                 </form>
             </div>
         </div>
     </div>
-</div>
-<!-- /Add Tax Modal -->
+</div><!-- /Add Tax Modal -->
 
 
 <!-- Delete Tax Modal -->
@@ -226,4 +214,4 @@
         </div>
     </div>
 </div>
-<!-- /Delete Tax Modal -->
+<!-- /Delete Tax Modal --></div></div>

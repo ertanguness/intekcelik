@@ -109,10 +109,6 @@ if ($result) {
     </div>
 </div>
 
-
-
-
-
 <script>
     $(function() {
         $('.check').bootstrapToggle({

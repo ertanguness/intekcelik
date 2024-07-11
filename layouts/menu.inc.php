@@ -6,6 +6,9 @@
 <li class="<?php hasActive("home") ?>">
     <a onclick="Route('home')"><i class="la la-dashboard"></i> <span> Ana Sayfa </span></a>
 </li>
+<li class="menu-title">
+    <span>Proje Yönetimi</span>
+</li>
 <li class="submenu">
     <a href="#"><i class="la la-cube"></i> <span> Projeler</span> <span class="menu-arrow"></span></a>
     <ul style="display: none;">
@@ -15,7 +18,7 @@
     </ul>
 </li>
 <li class="menu-title">
-    <span>İmalat</span>
+    <span>İmalat Yönetimi</span>
 </li>
 
 <li class="<?php hasActive("onimalat") ?>">
@@ -28,7 +31,7 @@
 
 
 <li class="menu-title">
-    <span>Stok</span>
+    <span>Stok Yönetimi</span>
 </li>
 
 <li class="<?php hasActive("onimalat") ?>">
@@ -73,7 +76,7 @@
 <li class="submenu">
     <a href="#"><i class="la la-cube"></i> <span> Tanımlamalar</span> <span class="menu-arrow"></span></a>
     <ul style="display: none;">
-        <li><a class="<?php hasActive("events") ?>    " href="events.php">Kullanıcı Tanımlama</a></li>
+        <li><a class="<?php hasActive("kullanici") ?>  " onclick="Route('pages/tanımlamalar/kullanici')">Kullanıcı Tanımlama</a></li>
         <li><a class="<?php hasActive("departman") ?> " onclick="Route('pages/tanımlamalar/departman')">Birim Sorumlusu Tanımlama</a></li>
         <li><a class="<?php hasActive("durum") ?>     " onclick="Route('pages/tanımlamalar/durum')">Proje Durum Tanımlama</a></li>
         <li><a class="<?php hasActive("surec") ?>     " onclick="Route('pages/tanımlamalar/surec')">Proje Süreç Tanımlama</a></li>
