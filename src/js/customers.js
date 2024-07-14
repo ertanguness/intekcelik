@@ -7,11 +7,6 @@ $("#saveSuppliers").click(function () {
     errorPlacement: function(error, element) {
       error.appendTo(element.next(".select2-container"));
     },
-
-
-
-
-
  
     rules: {
       firma_adi: { required: true, minlength: 2 },

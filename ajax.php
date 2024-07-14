@@ -23,7 +23,7 @@ if ($_POST["action"] == "project-new") {
 }
 
 // tedarikci firma ekleme-güncelleme
-if ($_POST["action"] == "saveSuppliers") {
+if ($_POST["action"] == "suppliers") {
     $id = $_POST["firma_id"];
     $firma_adi = $_POST["firma_adi"];
     $firma_yetkilisi = $_POST["firma_yetkilisi"];
